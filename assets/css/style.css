@@ -1,3 +1,9 @@
+/*--------Global--------*/
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(/Milestone-Project-2/assets/images/chart.jpg);
   background-size: cover;
@@ -5,6 +11,8 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: rgb(245, 222, 179);
+  margin: 0;
+  padding: 0;
 
 }
 
