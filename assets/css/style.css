@@ -1,6 +1,11 @@
 body {
   background-image: url(/Milestone-Project-2/assets/images/chart.jpg);
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgb(245, 222, 179);
+
 }
 
 /*--------Navbar--------*/
@@ -8,9 +13,15 @@ body {
 #main-navbar {
   background-image: url(/Milestone-Project-2/assets/images/wood.jpg);
   background-size: cover;
-}
+  }
 
 #main-brand {
-  color: aliceblue;
-  font-size: 2em;
+  color: rgb(245, 222, 179);
+  font-family: 'Italianno';
+  font-size: 3em;
+}
+
+#settings-icon {
+  color: rgb(245, 222, 179);
+  margin-right: 20px;
 }
