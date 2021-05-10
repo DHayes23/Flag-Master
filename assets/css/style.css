@@ -2,3 +2,15 @@ body {
   background-image: url(/Milestone-Project-2/assets/images/chart.jpg);
   background-size: cover;
 }
+
+/*--------Navbar--------*/
+
+#main-navbar {
+  background-image: url(/Milestone-Project-2/assets/images/wood.jpg);
+  background-size: cover;
+}
+
+#main-brand {
+  color: aliceblue;
+  font-size: 2em;
+}
