@@ -39,9 +39,9 @@ body {
   background-color: rgb(162, 206, 206);
   width: 25%;
   min-width: fit-content;
-  height: 180zpx;
   position: relative;
-  margin-top: 150px;
+  margin-top: 160px;
+  margin-bottom: 100px;
   border-radius: 10%;
   border: solid black 2px;
   background-image: url(/Milestone-Project-2/assets/images/blue-background.jpg);
@@ -69,8 +69,8 @@ body {
 	text-decoration:none;
 	text-shadow:1px 1px 0px #ffffff;
   width: 150px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 
 }
 
@@ -81,4 +81,24 @@ body {
 .menu-button:active {
 	position:relative;
 	top:1px;
+}
+
+
+/*--------Footer--------*/
+
+#main-footer{
+  text-align: center;
+  background-image: url(/Milestone-Project-2/assets/images/wood-background.png);
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+
+.footer-icon {
+margin: 20px;
+  color: wheat;
+}
+
+.footer-link {
+  text-decoration: none;
 }
