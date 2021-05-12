@@ -65,7 +65,7 @@ body {
 	display:inline-block;
 	cursor:pointer;
 	color:rgb(0, 0, 0);
-	font-family:Courier New;
+	font-family: 'Comfortaa';
 	font-size:14px;
 	font-weight:bold;
 	padding:12px 16px;
@@ -110,6 +110,8 @@ margin: 20px;
 
 #play-container {
   background-color: rgb(162, 206, 206);
+  background-image: url(/Milestone-Project-2/assets/images/blue-background.jpg);
+  background-size: cover;
   width: 25%;
   min-width: 200px;
   position: relative;
@@ -153,7 +155,8 @@ padding: 0%;
 	display:flex;
 	cursor:pointer;
 	color:rgb(0, 0, 0);
-	font-family:Courier New;
+  text-shadow:1px 1px 0px #ffffff;
+	font-family: 'Comfortaa';
 	font-size:.8em;
 	font-weight: bold;
 	padding: 5px;
@@ -167,4 +170,11 @@ padding: 0%;
   margin-right: auto;
 }
 
-
+.answer-button:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.answer-button:active {
+	position:relative;
+	top:1px;
+}
