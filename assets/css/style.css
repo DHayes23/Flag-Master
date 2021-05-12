@@ -20,6 +20,7 @@ body {
 #main-navbar {
   background-image: url(/Milestone-Project-2/assets/images/wood-background.png);
   background-size: cover;
+  height: 90px;
   }
 
 #main-brand {
@@ -101,4 +102,63 @@ margin: 20px;
 
 .footer-link {
   text-decoration: none;
+}
+
+/*--------Play Screen--------*/
+
+#play-container {
+  background-color: rgb(162, 206, 206);
+  width: 25%;
+  min-width: 200px;
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: 100px;
+  border-radius: 10%;
+  border: solid black 2px;
+  padding: 15px;
+  height: fit-content;
+  justify-content: center;
+}
+
+#play-flag-container {
+  width: 120px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid black 3px;
+  background-image: url(/Milestone-Project-2/assets/images/ireland-flag.png);
+  background-size: 100px 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0;
+
+}
+
+#card-counter {
+text-align: right;
+}
+
+#sound-icon {
+text-align: left;
+padding: 0%;
+}
+
+.answer-button {
+  box-shadow: 1px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border:2px solid #333029;
+	display:flex;
+	cursor:pointer;
+	color:#505739;
+	font-family:Courier New;
+	font-size:.7em;
+	font-weight: bold;
+	padding: 5px;
+	text-decoration: none;
+	text-shadow:1px 1px 0px #ffffff;
+  width: 170px;
+  text-align: left;
+  overflow: hidden;
+  margin: 1px;
 }
