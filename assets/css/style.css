@@ -20,18 +20,20 @@ body {
 #main-navbar {
   background-image: url(/Milestone-Project-2/assets/images/wood-background.png);
   background-size: cover;
-  height: 90px;
+  height: 75px;
   }
 
 #main-brand {
   color: rgb(245, 222, 179);
   font-family: 'Italianno';
   font-size: 3em;
+
 }
 
 #settings-icon {
   color: rgb(245, 222, 179);
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 /*--------Main Menu--------*/
@@ -62,7 +64,7 @@ body {
 	border:2px solid #333029;
 	display:inline-block;
 	cursor:pointer;
-	color:#505739;
+	color:rgb(0, 0, 0);
 	font-family:Courier New;
 	font-size:14px;
 	font-weight:bold;
@@ -115,22 +117,23 @@ margin: 20px;
   margin-bottom: 100px;
   border-radius: 10%;
   border: solid black 2px;
-  padding: 15px;
+  padding: 10px;
   height: fit-content;
-  justify-content: center;
 }
 
 #play-flag-container {
-  width: 120px;
-  height: 100px;
+  width: 160px;
+  height: 80px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
   border: solid black 3px;
   background-image: url(/Milestone-Project-2/assets/images/ireland-flag.png);
-  background-size: 100px 100px;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 0;
+  background-color: rgb(245, 222, 179);
 
 }
 
@@ -144,21 +147,24 @@ padding: 0%;
 }
 
 .answer-button {
-  box-shadow: 1px 1px 0px 0px #1c1b18;
 	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
 	background-color:#eae0c2;
 	border:2px solid #333029;
 	display:flex;
 	cursor:pointer;
-	color:#505739;
+	color:rgb(0, 0, 0);
 	font-family:Courier New;
-	font-size:.7em;
+	font-size:.8em;
 	font-weight: bold;
 	padding: 5px;
 	text-decoration: none;
-	text-shadow:1px 1px 0px #ffffff;
-  width: 170px;
+  width: 160px;
   text-align: left;
   overflow: hidden;
-  margin: 1px;
+  margin: 3px; 
+  position: inherit;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
