@@ -112,7 +112,7 @@ margin: 20px;
   background-color: rgb(162, 206, 206);
   background-image: url(/Milestone-Project-2/assets/images/blue-background.jpg);
   background-size: cover;
-  width: 25%;
+  width: 33%;
   min-width: 200px;
   position: relative;
   margin-top: 160px;
@@ -125,7 +125,7 @@ margin: 20px;
 
 #play-flag-container {
   width: 160px;
-  height: 80px;
+  height: 100px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
@@ -145,7 +145,6 @@ text-align: right;
 
 #sound-icon {
 text-align: left;
-padding: 0%;
 }
 
 .answer-button {
@@ -177,4 +176,70 @@ padding: 0%;
 .answer-button:active {
 	position:relative;
 	top:1px;
+}
+
+/*--------Learn Screen--------*/
+
+#learn-container {
+  background-color: rgb(162, 206, 206);
+  background-image: url(/Milestone-Project-2/assets/images/blue-background.jpg);
+  background-size: cover;
+  width: fit-content;
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: 100px;
+  border-radius: 10%;
+  border: solid black 2px;
+  padding: 10px;
+  height: fit-content;
+}
+
+#learn-flag-container {
+  width: 160px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: solid black 3px;
+  background-image: url(/Milestone-Project-2/assets/images/ireland-flag.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgb(245, 222, 179);
+}
+
+#learn-left-arrow {
+margin-top: auto;
+margin-bottom: auto;
+margin-left: auto;
+}
+
+#learn-right-arrow {
+margin-top: auto;
+margin-bottom: auto;
+margin-right: auto;
+}
+
+#learn-country-name{
+	background-color:#eae0c2;
+	border:2px solid #333029;
+  border-radius: 15%;
+	display:block;
+	color:rgb(0, 0, 0);
+  text-shadow:1px 1px 0px #ffffff;
+	font-family: 'Comfortaa';
+	font-size: 1em;
+	font-weight: bold;
+	padding: 5px;
+	text-decoration: none;
+  width: 160px;
+  margin: 3px; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  cursor: default;
+}
+
+#learn-info-link{
+  text-decoration: none;
+  color: #1c1b18;
 }
