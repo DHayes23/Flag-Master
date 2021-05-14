@@ -48,6 +48,7 @@ body {
   border-radius: 10%;
   border: solid black 2px;
   background-image: url(/assets/images/blue-background.jpg);
+  display: block;
 }
 
 .menu-col {
@@ -121,6 +122,7 @@ margin: 20px;
   border: solid black 2px;
   padding: 10px;
   height: fit-content;
+  display: none;
 }
 
 #play-flag-container {
@@ -187,11 +189,12 @@ text-align: left;
   width: fit-content;
   position: relative;
   margin-top: 160px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   border-radius: 10%;
   border: solid black 2px;
   padding: 10px;
   height: fit-content;
+  display: none;
 }
 
 #learn-flag-container {
@@ -242,4 +245,13 @@ margin-right: auto;
 #learn-info-link{
   text-decoration: none;
   color: #1c1b18;
+}
+
+/*--------How to Play Off Canvas--------*/
+#offcanvasRight {
+  background-color: #333029;
+  width: 33%;
+  font-family: 'Comfortaa';
+
+  color: wheat
 }

@@ -205,3 +205,22 @@
 	{name: "Zambia", flag: "/assets/images/flags/zambia.png"},
 	{name: "Zimbabwe", flag: "/assets/images/flags/zimbabwe.png"},
   ]
+
+	$( "#play-button").click(function() {
+		$("#menu-container").css("display", "none"),
+		$("#learn-container").css("display", "none"),
+		$("#play-container").css("display", "block")
+	});
+
+	$( "#learn-button").click(function() {
+		$("#menu-container").css("display", "none"),
+		$("#play-container").css("display", "none"),
+		$("#learn-container").css("display", "block")
+	});
+
+	$( "#main-brand").click(function() {
+		$("#menu-container").css("display", "block"),
+		$("#play-container").css("display", "none"),
+		$("#learn-container").css("display", "none")
+	});
+

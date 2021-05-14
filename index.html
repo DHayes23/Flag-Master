@@ -28,17 +28,18 @@
     <div id="menu-container" class="container">
       <div class="row menu-row">
         <div class="col menu-col">
-          <button class="menu-button">Play</button>
+          <button id="play-button" class="menu-button">Play</button>
         </div>
       </div>
       <div class="row menu-row">
         <div class="col menu-col">
-          <button class="menu-button">Learn</button>
+          <button id="learn-button" class="menu-button">Learn</button>
         </div>
       </div>
       <div class="row menu-row">
         <div class="col menu-col">
-          <button class="menu-button">How to Play</button>
+          <button id="how-to-play-button" class="menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">How to
+            Play</button>
         </div>
       </div>
     </div>
@@ -87,6 +88,17 @@
 
     </div>
   </section>
+  <!--How to Play Off Canvas-->
+  <div class="offcanvas offcanvas-end" tabindex="-0.5" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h4 id="offcanvasRightLabel">How to Play</h4>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+
   <!--Footer-->
   <footer id="main-footer">
     <div class="container-fluid">
