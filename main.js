@@ -225,92 +225,116 @@ $("#main-brand").click(function () {
 		$("#learn-container").css("display", "none")
 });
 
+
 function playGame() {
 
-	function generateCorrectAnswer() {
-		// This determines which flag is shown, and provides the the correct country name to one of the buttons within the answer-buttons div.
-		let answerCountry = Math.floor(Math.random() * countries.length);
-		$('#play-flag-container').css('background-image', `url(${countries[answerCountry].flag})`);
-		let answerCountryName = countries[answerCountry].name;
-		$("#answer-button-1").text(answerCountryName);
-		console.log(countries[answerCountry]);
-	}
+	// This is the variable that controls the number displayed in the card-counter.
+	let cardCounter = 1;
 
-	//This populates the remaining buttons with incorrect answers.
+	//This function changes the contents of the play-container each time the user clicks on a correct or an incorrect answer button.
+	function nextFlag() {
 
-	// Button 2
-	function generateIncorrectAnswerOne() {
-		let incorrectOne = Math.floor(Math.random() * countries.length);
-		let incorrectOneName = countries[incorrectOne].name;
-		$("#answer-button-2").text(incorrectOneName);
-	}
-	// Button 3
-	function generateIncorrectAnswerTwo() {
-		let incorrectTwo = Math.floor(Math.random() * countries.length);
-		let incorrectTwoName = countries[incorrectTwo].name;
-		$("#answer-button-3").text(incorrectTwoName);
-	}
-	// Button 4
-	function generateIncorrectAnswerThree() {
-		let incorrectThree = Math.floor(Math.random() * countries.length);
-		let incorrectThreeName = countries[incorrectThree].name;
-		$("#answer-button-4").text(incorrectThreeName);
-	}
+		// This changes the number on the card counter each time the nextFlag function is run.
+		$("#card-counter-text").text(`${cardCounter}/30`)
 
-	// This randomises the order of the divs contained within the 'answer-buttons' div, thereby ensuring that the correct answer is not always in the same place.
-	function randomiseButtonOrder() {
-		$(".answer-buttons").html($(".answer-buttons .randomised-button").sort(function () {
-			return Math.random() - 0.5;
-		}));
+		// This displays the score menu when the user finishes a round of the game.
+		if (cardCounter > 30) {
+			$("#play-container").css("display", "none"),
+				$("#menu-container").css("display", "block")
+		}
 
-		// This determines what happens when the user clicks the CORRECT answer, and initiates the next flag display. 
-		$("#answer-button-1").click(function () {
-			$(this).css('color', 'green');
-			$('#play-flag-container').css('background-color', 'green');
-			$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
-			setTimeout(function correctAnswerClick() {
-				$("#answer-button-1").css('color', 'black');
-				playGame()
-			}, 700);
+		cardCounter++
+		function generateCorrectAnswer() {
+			// This determines which flag is shown, and provides the the correct country name to one of the buttons within the answer-buttons div.
+			let answerCountry = Math.floor(Math.random() * countries.length);
+			$('#play-flag-container').css('background-image', `url(${countries[answerCountry].flag})`);
+			let answerCountryName = countries[answerCountry].name;
+			$("#answer-button-1").text(answerCountryName);
+			console.log(countries[answerCountry]);
+		}
 
-		})
-		// This determines what happens when the user clicks on any of the INCORRECT answers, and initiates the next flag display.
+		//This populates the remaining buttons with incorrect answers.
+
 		// Button 2
-		$("#answer-button-2").click(function () {
-			$(this).css('color', 'red');
-			$('#play-flag-container').css('background-color', 'red');
-			$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-			setTimeout(function correctAnswerClick() {
-				$("#answer-button-2").css('color', 'black');
-				playGame()
-			}, 700);
-		})
-		//Button 3
-		$("#answer-button-3").click(function () {
-			$(this).css('color', 'red');
-			$('#play-flag-container').css('background-color', 'red');
-			$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-			setTimeout(function correctAnswerClick() {
-				$("#answer-button-3").css('color', 'black');
-				playGame()
-			}, 700);
-		})
+		function generateIncorrectAnswerOne() {
+			let incorrectOne = Math.floor(Math.random() * countries.length);
+			let incorrectOneName = countries[incorrectOne].name;
+			$("#answer-button-2").text(incorrectOneName);
+		}
+		// Button 3
+		function generateIncorrectAnswerTwo() {
+			let incorrectTwo = Math.floor(Math.random() * countries.length);
+			let incorrectTwoName = countries[incorrectTwo].name;
+			$("#answer-button-3").text(incorrectTwoName);
+		}
 		// Button 4
-		$("#answer-button-4").click(function () {
-			$(this).css('color', 'red');
-			$('#play-flag-container').css('background-color', 'red');
-			$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-			setTimeout(function correctAnswerClick() {
-				$("#answer-button-4").css('color', 'black');
-				playGame()
-			}, 700);
+		function generateIncorrectAnswerThree() {
+			let incorrectThree = Math.floor(Math.random() * countries.length);
+			let incorrectThreeName = countries[incorrectThree].name;
+			$("#answer-button-4").text(incorrectThreeName);
+		}
 
-		})
+		// This randomises the order of the divs contained within the 'answer-buttons' div, thereby ensuring that the correct answer is not always in the same place.
+		function randomiseButtonOrder() {
+			$(".answer-buttons").html($(".answer-buttons .randomised-button").sort(function () {
+				return Math.random() - 0.5;
+			}));
+
+			// This determines what happens when the user clicks the CORRECT answer, and initiates the next flag display. 
+			$("#answer-button-1").click(function () {
+				$(this).css('color', 'green');
+				$('#play-flag-container').css('background-color', 'green');
+				$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
+				setTimeout(function correctAnswerClick() {
+					$("#answer-button-1").css('color', 'black');
+					nextFlag()
+				}, 700);
+
+			})
+			// This determines what happens when the user clicks on any of the INCORRECT answers, and initiates the next flag display.
+			// Button 2
+			$("#answer-button-2").click(function () {
+				$(this).css('color', 'red');
+				$('#play-flag-container').css('background-color', 'red');
+				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
+				setTimeout(function correctAnswerClick() {
+					$("#answer-button-2").css('color', 'black');
+					nextFlag()
+				}, 700);
+			})
+			//Button 3
+			$("#answer-button-3").click(function () {
+				$(this).css('color', 'red');
+				$('#play-flag-container').css('background-color', 'red');
+				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
+				setTimeout(function correctAnswerClick() {
+					$("#answer-button-3").css('color', 'black');
+					nextFlag()
+				}, 700);
+			})
+			// Button 4
+			$("#answer-button-4").click(function () {
+				$(this).css('color', 'red');
+				$('#play-flag-container').css('background-color', 'red');
+				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
+				setTimeout(function correctAnswerClick() {
+					$("#answer-button-4").css('color', 'black');
+					nextFlag()
+				}, 700);
+
+			})
+		}
+
+		generateCorrectAnswer()
+		generateIncorrectAnswerOne()
+		generateIncorrectAnswerTwo()
+		generateIncorrectAnswerThree()
+		randomiseButtonOrder()
+		console.log(cardCounter)
+		cardCountFunction()
+		cardCounter++
+
 	}
+	nextFlag()
 
-	generateCorrectAnswer()
-	generateIncorrectAnswerOne()
-	generateIncorrectAnswerTwo()
-	generateIncorrectAnswerThree()
-	randomiseButtonOrder()
 }
