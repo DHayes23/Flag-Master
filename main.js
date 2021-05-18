@@ -246,6 +246,7 @@ function playGame() {
 
 	// This is the variable that controls the number displayed in the card-counter.
 	let cardCounter = 1;
+	let score = 0;
 
 	//This function changes the contents of the play-container each time the user clicks on a correct or an incorrect answer button.
 	function nextFlag() {
@@ -259,7 +260,32 @@ function playGame() {
 				$("#score-container").css("display", "block")
 		}
 
-		cardCounter++
+		// This displays the score the player achieved in the round on the Score Screen, as well as a different message for certain score thresholds
+		switch(true)
+		{
+			case (score => 30):
+				$("#score-message").text(`Wow! You scored ${score}/30! You really are a Flag Master! `)
+				break;
+			case (score => 25):
+				$("#score-message").text(`So close! You scored ${score}/30! With a little more practice you could be a Flag Master! `)
+				break;
+			case (score => 20):
+				$("#score-message").text(`You scored ${score}/30! Good job, but there's room for improvement!`)
+				break;
+			case (score === 15):
+				$("#score-message").text(`You got half right, keep trying! You scored ${score}/30.`)
+				break;
+			case (score => 10):
+				$("#score-message").text(`You scored ${score}/30. You've got a long road ahead to become a Flag Master!`)
+				break;
+			case (score < 10):
+				$("#score-message").text(`Oh dear, you scored ${score}/30. You'll need a lot of practice!`)
+				break;
+			case (score === 0):
+				$("#score-message").text(`You scored ${score}/30. I hope you did this on purpose...`)
+				break;
+		}
+
 		function generateCorrectAnswer() {
 			// This determines which flag is shown, and provides the the correct country name to one of the buttons within the answer-buttons div.
 			let answerCountry = Math.floor(Math.random() * countries.length);
@@ -301,8 +327,9 @@ function playGame() {
 				$(this).css('color', 'green');
 				$('#play-flag-container').css('background-color', 'green');
 				$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
-				setTimeout(function correctAnswerClick() {
+				setTimeout(function answerClick() {
 					$("#answer-button-1").css('color', 'black');
+					score++;
 					nextFlag()
 				}, 700);
 
@@ -313,7 +340,7 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				setTimeout(function correctAnswerClick() {
+				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
 					nextFlag()
 				}, 700);
@@ -323,7 +350,7 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				setTimeout(function correctAnswerClick() {
+				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
 					nextFlag()
 				}, 700);
@@ -333,7 +360,7 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				setTimeout(function correctAnswerClick() {
+				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
 					nextFlag()
 				}, 700);
@@ -347,9 +374,8 @@ function playGame() {
 		generateIncorrectAnswerThree()
 		randomiseButtonOrder()
 		console.log(cardCounter)
-		cardCountFunction()
 		cardCounter++
-
+		console.log(score)
 	}
 	nextFlag()
 
