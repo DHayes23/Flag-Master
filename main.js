@@ -174,7 +174,7 @@ const countries = [
 	{ name: "South Sudan", flag: "/assets/images/flags/south-sudan.png" },
 	{ name: "Spain", flag: "/assets/images/flags/spain.png" },
 	{ name: "Sri Lanka", flag: "/assets/images/flags/sri-lanka.png" },
-	{ name: "Sudan (the)", flag: "/assets/images/flags/sudan.png" },
+	{ name: "Sudan", flag: "/assets/images/flags/sudan.png" },
 	{ name: "Suriname", flag: "/assets/images/flags/suriname.png" },
 	{ name: "Sweden", flag: "/assets/images/flags/sweden.png" },
 	{ name: "Switzerland", flag: "/assets/images/flags/switzerland.png" },
