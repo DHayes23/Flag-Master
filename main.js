@@ -248,6 +248,7 @@ function playGame() {
 	let cardCounter = 1;
 	let score = 0;
 
+
 	//This function changes the contents of the play-container each time the user clicks on a correct or an incorrect answer button.
 	function nextFlag() {
 
@@ -324,12 +325,14 @@ function playGame() {
 
 			// This determines what happens when the user clicks the CORRECT answer, and initiates the next flag display. 
 			$("#answer-button-1").click(function () {
+				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'green');
 				$('#play-flag-container').css('background-color', 'green');
 				$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
 				setTimeout(function answerClick() {
 					$("#answer-button-1").css('color', 'black');
 					score++;
+					$('.answer-button').removeAttr("disabled");
 					nextFlag()
 				}, 700);
 
@@ -337,31 +340,37 @@ function playGame() {
 			// This determines what happens when the user clicks on any of the INCORRECT answers, and initiates the next flag display.
 			// Button 2
 			$("#answer-button-2").click(function () {
+				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
+					$('.answer-button').removeAttr("disabled");
 					nextFlag()
 				}, 700);
 			})
 			//Button 3
 			$("#answer-button-3").click(function () {
+				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
+					$('.answer-button').removeAttr("disabled");
 					nextFlag()
 				}, 700);
 			})
 			// Button 4
 			$("#answer-button-4").click(function () {
+				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
+					$('.answer-button').removeAttr("disabled");
 					nextFlag()
 				}, 700);
 
