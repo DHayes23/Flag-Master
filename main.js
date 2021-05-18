@@ -207,24 +207,40 @@ const countries = [
 ]
 
 $("#play-button").click(function () {
-	$("#menu-container").css("display", "none"),
-		$("#learn-container").css("display", "none"),
-		$("#play-container").css("display", "block"),
-		playGame();
+	$("#menu-container").css("display", "none");
+	$("#learn-container").css("display", "none");
+	$("#score-container").css("display", "none");
+	$("#play-container").css("display", "block");
+	playGame();
 });
 
 $("#learn-button").click(function () {
-	$("#menu-container").css("display", "none"),
-		$("#play-container").css("display", "none"),
-		$("#learn-container").css("display", "block")
+	$("#menu-container").css("display", "none");
+	$("#play-container").css("display", "none");
+	$("#score-container").css("display", "none");
+	$("#learn-container").css("display", "block");
 });
 
 $("#main-brand").click(function () {
-	$("#menu-container").css("display", "block"),
-		$("#play-container").css("display", "none"),
-		$("#learn-container").css("display", "none")
+	$("#menu-container").css("display", "block");
+	$("#play-container").css("display", "none");
+	$("#score-container").css("display", "none");
+	$("#learn-container").css("display", "none");
 });
 
+$("#play-again-button").click(function () {
+	$("#menu-container").css("display", "none");
+	$("#learn-container").css("display", "none");
+	$("#score-container").css("display", "none");
+	$("#play-container").css("display", "block");
+	playGame();
+});
+$("#main-menu-button").click(function () {
+	$("#menu-container").css("display", "block");
+	$("#learn-container").css("display", "none");
+	$("#score-container").css("display", "none");
+	$("#play-container").css("display", "none");
+});
 
 function playGame() {
 
@@ -240,7 +256,7 @@ function playGame() {
 		// This displays the score menu when the user finishes a round of the game.
 		if (cardCounter > 30) {
 			$("#play-container").css("display", "none"),
-				$("#menu-container").css("display", "block")
+				$("#score-container").css("display", "block")
 		}
 
 		cardCounter++
