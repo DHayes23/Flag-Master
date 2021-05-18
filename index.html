@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
     crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Comfortaa&family=Italianno&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -48,7 +48,9 @@
   <section>
     <div id="play-container" class="container">
       <div class="row">
-        <div id="card-counter" class="col-2"><p id="card-counter-text"></p></div>
+        <div id="card-counter" class="col-2">
+          <p id="card-counter-text"></p>
+        </div>
         <div class="col-8"></div>
         <div id="sound-icon" class="col-2"><i class="fas fa-bell-slash"></i></div>
       </div>
@@ -100,6 +102,21 @@
       ...
     </div>
   </div>
+  <!--Score Screen-->
+  <section>
+    <div id="score-container" class="container">
+      <div class="row">
+        <div class="col">
+          <h4 id="score-message">Well done! You scored 24/30!</h4>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col"><button class="score-button">Play Again</button></div>
+        <div class="col"><button class="score-button">Main Menu</button></div>
+      </div>
+    </div>
+  </section>
+
 
   <!--Footer-->
   <footer id="main-footer">
