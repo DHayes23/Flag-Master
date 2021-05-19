@@ -143,8 +143,14 @@ margin: 20px;
 text-align: right;
 }
 
+#no-sound-icon {
+text-align: left;
+display: inline;
+}
+
 #sound-icon {
 text-align: left;
+display: none;
 }
 
 .answer-button {
