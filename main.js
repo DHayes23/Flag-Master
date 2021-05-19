@@ -252,23 +252,23 @@ function playGame() {
 	let cardCounter = 1;
 	// This is the variable that tracks how many correct answers the user has clicked. 
 	let score = 0;
-
+	// This is the variable that controls whether or not sounds are played when the user clicks an answer. 
 	let soundToggle = 0;
-
+	// These functions change the sound icons' appearance and toggle the soundToggle variable on click.
 	$("#no-sound-icon").click(function () {
 		$(this).css("display", "none")
 		$("#sound-icon").css("display", "inline")
 		soundToggle = 1;
 		console.log(soundToggle)
 	});
-	
+
 	$("#sound-icon").click(function () {
 		$(this).css("display", "none")
 		$("#no-sound-icon").css("display", "inline");
 		soundToggle = 0;
 		console.log(soundToggle)
 	});
-	
+
 	// This function plays an audio file when the user clicks the correct answer button.
 	function playCorrect() {
 		let audio = new Audio('assets/audio/correct.mp4');
@@ -349,8 +349,9 @@ function playGame() {
 				$(this).css('color', 'green');
 				$('#play-flag-container').css('background-color', 'green');
 				$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
-				if(soundToggle === 1){
-				playCorrect();}
+				if (soundToggle === 1) {
+					playCorrect();
+				}
 				setTimeout(function answerClick() {
 					$("#answer-button-1").css('color', 'black');
 					score++;
@@ -367,7 +368,8 @@ function playGame() {
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				if (soundToggle === 1) {
-				playIncorrect();}
+					playIncorrect();
+				}
 				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -380,8 +382,9 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				if (soundToggle === 1){
-				playIncorrect();}
+				if (soundToggle === 1) {
+					playIncorrect();
+				}
 				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -395,7 +398,8 @@ function playGame() {
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				if (soundToggle === 1) {
-				playIncorrect();}
+					playIncorrect();
+				}
 				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
