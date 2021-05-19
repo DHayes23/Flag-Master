@@ -378,7 +378,7 @@ function playGame() {
 					score++;
 					$('.answer-button').removeAttr("disabled");
 					nextFlag()
-				}, 700);
+				}, 800);
 			})
 
 			// This determines what happens when the user clicks on any of the INCORRECT answers, and initiates the next flag display.
@@ -396,7 +396,7 @@ function playGame() {
 					$("#answer-button-2").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
 					nextFlag()
-				}, 700);
+				}, 800);
 			})
 			//Button 3
 			$("#answer-button-3").click(function () {
@@ -412,7 +412,7 @@ function playGame() {
 					$("#answer-button-3").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
 					nextFlag()
-				}, 700);
+				}, 800);
 			})
 			// Button 4
 			$("#answer-button-4").click(function () {
@@ -428,7 +428,7 @@ function playGame() {
 					$("#answer-button-4").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
 					nextFlag()
-				}, 700);
+				}, 800);
 			})
 		}
 
