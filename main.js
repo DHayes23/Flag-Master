@@ -265,7 +265,6 @@ function playGame() {
 	//This function changes the contents of the play-container each time the user clicks on a correct or an incorrect answer button.
 	function nextFlag() {
 
-
 		// This changes the number on the card counter each time the nextFlag function is run.
 		$("#card-counter-text").text(`${cardCounter}/30`)
 
@@ -288,7 +287,6 @@ function playGame() {
 			$("#score-message").text(`You scored ${score}/30! You really are a Flag Master!`)
 		}
 
-
 		function generateCorrectAnswer() {
 			// This determines which flag is shown, and provides the the correct country name to one of the buttons within the answer-buttons div.
 			let answerCountry = Math.floor(Math.random() * countries.length);
@@ -299,7 +297,6 @@ function playGame() {
 		}
 
 		//This populates the remaining buttons with incorrect answers.
-
 		// Button 2
 		function generateIncorrectAnswerOne() {
 			let incorrectOne = Math.floor(Math.random() * countries.length);
@@ -339,8 +336,8 @@ function playGame() {
 					$('.answer-button').removeAttr("disabled");
 					nextFlag()
 				}, 700);
-
 			})
+
 			// This determines what happens when the user clicks on any of the INCORRECT answers, and initiates the next flag display.
 			// Button 2
 			$("#answer-button-2").click(function () {
@@ -380,7 +377,6 @@ function playGame() {
 					$('.answer-button').removeAttr("disabled");
 					nextFlag()
 				}, 700);
-
 			})
 		}
 
