@@ -242,6 +242,10 @@ $("#main-menu-button").click(function () {
 	$("#play-container").css("display", "none");
 });
 
+
+
+
+
 function playGame() {
 
 	// This is the variable that controls the number displayed in the card-counter.
@@ -249,6 +253,22 @@ function playGame() {
 	// This is the variable that tracks how many correct answers the user has clicked. 
 	let score = 0;
 
+	let soundToggle = 0;
+
+	$("#no-sound-icon").click(function () {
+		$(this).css("display", "none")
+		$("#sound-icon").css("display", "inline")
+		soundToggle = 1;
+		console.log(soundToggle)
+	});
+	
+	$("#sound-icon").click(function () {
+		$(this).css("display", "none")
+		$("#no-sound-icon").css("display", "inline");
+		soundToggle = 0;
+		console.log(soundToggle)
+	});
+	
 	// This function plays an audio file when the user clicks the correct answer button.
 	function playCorrect() {
 		let audio = new Audio('assets/audio/correct.mp4');
