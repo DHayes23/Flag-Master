@@ -349,7 +349,8 @@ function playGame() {
 				$(this).css('color', 'green');
 				$('#play-flag-container').css('background-color', 'green');
 				$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
-				playCorrect();
+				if(soundToggle === 1){
+				playCorrect();}
 				setTimeout(function answerClick() {
 					$("#answer-button-1").css('color', 'black');
 					score++;
@@ -365,7 +366,8 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				playIncorrect();
+				if (soundToggle === 1) {
+				playIncorrect();}
 				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -378,7 +380,8 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				playIncorrect();
+				if (soundToggle === 1){
+				playIncorrect();}
 				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -391,7 +394,8 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
-				playIncorrect();
+				if (soundToggle === 1) {
+				playIncorrect();}
 				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
