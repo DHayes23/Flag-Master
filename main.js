@@ -265,7 +265,7 @@ function playGame() {
 	//This function changes the contents of the play-container each time the user clicks on a correct or an incorrect answer button.
 	function nextFlag() {
 
-		
+
 		// This changes the number on the card counter each time the nextFlag function is run.
 		$("#card-counter-text").text(`${cardCounter}/30`)
 
