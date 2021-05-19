@@ -246,12 +246,26 @@ function playGame() {
 
 	// This is the variable that controls the number displayed in the card-counter.
 	let cardCounter = 1;
+	// This is the variable that tracks how many correct answers the user has clicked. 
 	let score = 0;
 
+	// This function plays an audio file when the user clicks the correct answer button.
+	function playCorrect() {
+		let audio = new Audio('assets/audio/correct.mp4');
+		audio.volume = 0.3;
+		audio.play();
+	};
+	// This function plays an audio file when the user clicks an incorrect answer button.
+	function playIncorrect() {
+		let audio = new Audio('assets/audio/incorrect.mp4');
+		audio.volume = 0.1;
+		audio.play();
+	};
 
 	//This function changes the contents of the play-container each time the user clicks on a correct or an incorrect answer button.
 	function nextFlag() {
 
+		
 		// This changes the number on the card counter each time the nextFlag function is run.
 		$("#card-counter-text").text(`${cardCounter}/30`)
 
@@ -318,6 +332,7 @@ function playGame() {
 				$(this).css('color', 'green');
 				$('#play-flag-container').css('background-color', 'green');
 				$('#play-flag-container').css('background-image', `url(assets/images/checked.png)`);
+				playCorrect();
 				setTimeout(function answerClick() {
 					$("#answer-button-1").css('color', 'black');
 					score++;
@@ -333,6 +348,7 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
+				playIncorrect();
 				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -345,6 +361,7 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
+				playIncorrect();
 				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -357,6 +374,7 @@ function playGame() {
 				$(this).css('color', 'red');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
+				playIncorrect();
 				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
