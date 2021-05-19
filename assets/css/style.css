@@ -47,7 +47,7 @@ body {
   margin-bottom: 100px;
   border-radius: 10%;
   border: solid black 2px;
-  background-image: url(assets/images/blue-background.jpg);
+  background-image: url(../images/blue-background.jpg);
   display: block;
 }
 
@@ -91,7 +91,7 @@ body {
 
 #main-footer{
   text-align: center;
-  background-image: url(assets/images/wood-background.png);
+  background-image: url(../images/wood-background.png);
   background-size: cover;
   height: auto;
   width: 100%;
@@ -110,7 +110,7 @@ margin: 20px;
 
 #play-container {
   background-color: rgb(162, 206, 206);
-  background-image: url(assets/images/blue-background.jpg);
+  background-image: url(../images/blue-background.jpg);
   background-size: cover;
   width: 33%;
   min-width: 200px;
@@ -188,7 +188,7 @@ display: none;
 
 #learn-container {
   background-color: rgb(162, 206, 206);
-  background-image: url(assets/images/blue-background.jpg);
+  background-image: url(../images/blue-background.jpg);
   background-size: cover;
   width: fit-content;
   position: relative;
@@ -207,7 +207,7 @@ display: none;
   margin-top: 10px;
   margin-bottom: 5px;
   border: solid black 3px;
-  background-image: url(assets/images/flags/ireland.png);
+  background-image: url(../images/flags/ireland.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -255,7 +255,7 @@ margin-right: auto;
 
 #score-container {
     background-color: rgb(162, 206, 206);
-    background-image: url(assets/images/blue-background.jpg);
+    background-image: url(../images/blue-background.jpg);
     background-size: cover;
     width: fit-content;
     position: relative;
