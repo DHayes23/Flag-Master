@@ -232,7 +232,10 @@ $("#play-again-button").click(function () {
 	$("#menu-container").css("display", "none");
 	$("#learn-container").css("display", "none");
 	$("#score-container").css("display", "none");
+	$("#no-sound-icon").css("display", "inline");
+	$("#sound-icon").css("display", "none");
 	$("#play-container").css("display", "block");
+	soundToggle = 0;
 	playGame();
 });
 $("#main-menu-button").click(function () {
@@ -268,6 +271,8 @@ function playGame() {
 		soundToggle = 0;
 		console.log(soundToggle)
 	});
+
+	let buttonArray = [];
 
 	// This function plays an audio file when the user clicks the correct answer button.
 	function playCorrect() {
@@ -310,6 +315,8 @@ function playGame() {
 		function generateCorrectAnswer() {
 			// This determines which flag is shown, and provides the the correct country name to one of the buttons within the answer-buttons div.
 			let answerCountry = Math.floor(Math.random() * countries.length);
+			buttonArray.push(answerCountry);
+			console.log(buttonArray);
 			$('#play-flag-container').css('background-image', `url(${countries[answerCountry].flag})`);
 			let answerCountryName = countries[answerCountry].name;
 			$("#answer-button-1").text(answerCountryName);
@@ -320,18 +327,30 @@ function playGame() {
 		// Button 2
 		function generateIncorrectAnswerOne() {
 			let incorrectOne = Math.floor(Math.random() * countries.length);
+			buttonArray.push(incorrectOne);
+			if (buttonArray[1] === buttonArray[0]) {
+				generateIncorrectAnswerOne()
+			}
 			let incorrectOneName = countries[incorrectOne].name;
 			$("#answer-button-2").text(incorrectOneName);
 		}
 		// Button 3
 		function generateIncorrectAnswerTwo() {
 			let incorrectTwo = Math.floor(Math.random() * countries.length);
+			buttonArray.push(incorrectTwo);
+			if (buttonArray[2] === buttonArray[1] || buttonArray[2] === buttonArray[0]) {
+				generateIncorrectAnswerTwo()
+			}
 			let incorrectTwoName = countries[incorrectTwo].name;
 			$("#answer-button-3").text(incorrectTwoName);
 		}
 		// Button 4
 		function generateIncorrectAnswerThree() {
 			let incorrectThree = Math.floor(Math.random() * countries.length);
+			buttonArray.push(incorrectThree);
+			if (buttonArray[3] === buttonArray[2] || buttonArray[3] === buttonArray[1] || buttonArray[3] === buttonArray[0]) {
+				generateIncorrectAnswerThree()
+			}
 			let incorrectThreeName = countries[incorrectThree].name;
 			$("#answer-button-4").text(incorrectThreeName);
 		}
@@ -352,6 +371,7 @@ function playGame() {
 				if (soundToggle === 1) {
 					playCorrect();
 				}
+				buttonArray = []
 				setTimeout(function answerClick() {
 					$("#answer-button-1").css('color', 'black');
 					score++;
@@ -370,6 +390,7 @@ function playGame() {
 				if (soundToggle === 1) {
 					playIncorrect();
 				}
+				buttonArray = []
 				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -385,6 +406,7 @@ function playGame() {
 				if (soundToggle === 1) {
 					playIncorrect();
 				}
+				buttonArray = []
 				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
@@ -400,6 +422,7 @@ function playGame() {
 				if (soundToggle === 1) {
 					playIncorrect();
 				}
+				buttonArray = []
 				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
