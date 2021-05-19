@@ -328,8 +328,9 @@ function playGame() {
 		function generateIncorrectAnswerOne() {
 			let incorrectOne = Math.floor(Math.random() * countries.length);
 			buttonArray.push(incorrectOne);
+			// This (in combination with the other controls in the answer generators) ensures that the same countries are not called upon more than once when a new flag is displayed. 
 			if (buttonArray[1] === buttonArray[0]) {
-				generateIncorrectAnswerOne()
+				incorrectOne = Math.floor(Math.random() * countries.length)
 			}
 			let incorrectOneName = countries[incorrectOne].name;
 			$("#answer-button-2").text(incorrectOneName);
@@ -339,7 +340,7 @@ function playGame() {
 			let incorrectTwo = Math.floor(Math.random() * countries.length);
 			buttonArray.push(incorrectTwo);
 			if (buttonArray[2] === buttonArray[1] || buttonArray[2] === buttonArray[0]) {
-				generateIncorrectAnswerTwo()
+				incorrectTwo = Math.floor(Math.random() * countries.length)
 			}
 			let incorrectTwoName = countries[incorrectTwo].name;
 			$("#answer-button-3").text(incorrectTwoName);
@@ -349,7 +350,7 @@ function playGame() {
 			let incorrectThree = Math.floor(Math.random() * countries.length);
 			buttonArray.push(incorrectThree);
 			if (buttonArray[3] === buttonArray[2] || buttonArray[3] === buttonArray[1] || buttonArray[3] === buttonArray[0]) {
-				generateIncorrectAnswerThree()
+				incorrectThree = Math.floor(Math.random() * countries.length)
 			}
 			let incorrectThreeName = countries[incorrectThree].name;
 			$("#answer-button-4").text(incorrectThreeName);
