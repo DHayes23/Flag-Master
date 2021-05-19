@@ -262,30 +262,18 @@ function playGame() {
 		}
 
 		// This displays the score the player achieved in the round on the Score Screen, as well as a different message for certain score thresholds
-		switch(true)
-		{
-			case (score => 30):
-				$("#score-message").text(`Wow! You scored ${score}/30! You really are a Flag Master! `)
-				break;
-			case (score => 25):
-				$("#score-message").text(`So close! You scored ${score}/30! With a little more practice you could be a Flag Master! `)
-				break;
-			case (score => 20):
-				$("#score-message").text(`You scored ${score}/30! Good job, but there's room for improvement!`)
-				break;
-			case (score === 15):
-				$("#score-message").text(`You got half right, keep trying! You scored ${score}/30.`)
-				break;
-			case (score => 10):
-				$("#score-message").text(`You scored ${score}/30. You've got a long road ahead to become a Flag Master!`)
-				break;
-			case (score < 10):
-				$("#score-message").text(`Oh dear, you scored ${score}/30. You'll need a lot of practice!`)
-				break;
-			case (score === 0):
-				$("#score-message").text(`You scored ${score}/30. I hope you did this on purpose...`)
-				break;
+		if (score === 0) {
+			$("#score-message").text(`You scored ${score}/30! I hope you did that on purpose... `)
+		} else if (score <= 10) {
+			$("#score-message").text(`You scored ${score}/30! You've got a long way to go!`)
+		} else if (score <= 25) {
+			$("#score-message").text(`You scored ${score}/30! Keep practicing!`)
+		} else if (score < 30) {
+			$("#score-message").text(`You scored ${score}/30! You're not a Flag Master yet, but you're getting close!`)
+		} else {
+			$("#score-message").text(`You scored ${score}/30! You really are a Flag Master!`)
 		}
+
 
 		function generateCorrectAnswer() {
 			// This determines which flag is shown, and provides the the correct country name to one of the buttons within the answer-buttons div.
@@ -325,6 +313,7 @@ function playGame() {
 
 			// This determines what happens when the user clicks the CORRECT answer, and initiates the next flag display. 
 			$("#answer-button-1").click(function () {
+				// This disables the answer buttons after they are pressed, preventing the player from clicking on another button until after the next flag has been fully loaded.
 				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'green');
 				$('#play-flag-container').css('background-color', 'green');
