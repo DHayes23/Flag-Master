@@ -229,6 +229,13 @@ $("#main-brand").click(function () {
 	$("#learn-container").css("display", "none");
 });
 
+$("#menu-return-button").click(function () {
+	$("#menu-container").css("display", "block");
+	$("#play-container").css("display", "none");
+	$("#score-container").css("display", "none");
+	$("#learn-container").css("display", "none");
+});
+
 $("#play-again-button").click(function () {
 	$("#menu-container").css("display", "none");
 	$("#learn-container").css("display", "none");
