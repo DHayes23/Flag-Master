@@ -315,3 +315,7 @@ margin-right: auto;
   font-family: 'Comfortaa';
   color: wheat
 }
+
+.off-canvas-li {
+  list-style-type: none;
+  }
