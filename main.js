@@ -219,6 +219,7 @@ $("#learn-button").click(function () {
 	$("#play-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#learn-container").css("display", "block");
+	learn();
 });
 
 $("#main-brand").click(function () {
@@ -245,6 +246,7 @@ $("#main-menu-button").click(function () {
 	$("#play-container").css("display", "none");
 });
 
+// The following function controls all of the events of the Play Screen.
 function playGame() {
 
 	// This is the variable that controls the number displayed in the card-counter.
@@ -439,4 +441,38 @@ function playGame() {
 	}
 	nextFlag()
 
+}
+
+// The following function controls all of the events of the Learn Screen
+function learn() {
+
+	let flagIndex = 0;
+
+	function generateLearnCountry() {
+		$('#learn-flag-container').css('background-image', `url(${countries[flagIndex].flag})`);
+		$("#learn-country-name").text(countries[flagIndex].name);
+		$("#card-counter-learn").text(`${flagIndex + 1}/${countries.length}`);
+
+		if (flagIndex === 0) {
+			$("#learn-cycle-left").css('visibility', 'hidden')
+		} else if (flagIndex === countries.length - 1) {
+			$("#learn-cycle-right").css('visibility', 'hidden')
+		} else {
+			$("#learn-cycle-left").css('visibility', 'visible'),
+			$("#learn-cycle-right").css('visibility', 'visible')
+
+		}
+
+	}
+
+	$("#learn-cycle-right").click(function () {
+		flagIndex = flagIndex + 1
+		generateLearnCountry()
+	});
+	$("#learn-cycle-left").click(function () {
+		flagIndex = flagIndex - 1
+		generateLearnCountry()
+	});
+
+	generateLearnCountry()
 }
