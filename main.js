@@ -245,10 +245,6 @@ $("#main-menu-button").click(function () {
 	$("#play-container").css("display", "none");
 });
 
-
-
-
-
 function playGame() {
 
 	// This is the variable that controls the number displayed in the card-counter.
