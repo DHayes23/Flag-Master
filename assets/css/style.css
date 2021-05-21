@@ -287,15 +287,15 @@ margin-right: auto;
     background-color: rgb(162, 206, 206);
     background-image: url(../images/blue-background.jpg);
     background-size: cover;
-    width: fit-content;
+    width: 600px;
     position: relative;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin-top: 450px;
+    margin-bottom: 400px;
     border-radius: 10%;
     border: solid black 2px;
-    padding: 10px;
+    padding: 25px;
     height: fit-content;
-    display: none;
+    display: block;
   }
 
   #score-message{
@@ -303,7 +303,7 @@ margin-right: auto;
     text-align: center;
     font-family: 'Comfortaa';
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 3em;
   }
 
   .score-button{
@@ -316,12 +316,12 @@ margin-right: auto;
   display: flex;
 	color:rgb(0, 0, 0);
 	font-family: 'Comfortaa';
-	font-size:14px;
+	font-size: 2.5em;
 	font-weight:bold;
 	padding:12px 16px;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #ffffff;
-  width: 130px;
+  width: 350px;
   margin-bottom: 15px;
   margin-top: 20px;
   margin-left: auto;
