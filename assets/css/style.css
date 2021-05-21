@@ -294,7 +294,7 @@ margin-right: auto;
     border: solid black 2px;
     padding: 25px;
     height: fit-content;
-    display: block;
+    display: none;
   }
 
   #score-message{
