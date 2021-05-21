@@ -227,6 +227,9 @@ $("#main-brand").click(function () {
 	$("#play-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#learn-container").css("display", "none");
+	$("#no-sound-icon").css("display", "inline");
+	$("#sound-icon").css("display", "none");
+	soundToggle = 0;
 });
 
 $("#menu-return-button").click(function () {
@@ -234,6 +237,9 @@ $("#menu-return-button").click(function () {
 	$("#play-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#learn-container").css("display", "none");
+	$("#no-sound-icon").css("display", "inline");
+	$("#sound-icon").css("display", "none");
+	soundToggle = 0;
 });
 
 $("#play-again-button").click(function () {
