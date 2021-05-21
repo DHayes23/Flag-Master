@@ -19,7 +19,7 @@ body {
 /*--------Navbar--------*/
 
 #main-navbar {
-  background-image: url(../images/wood-background.png);
+  background-image: url(../images/wood-background.jpeg);
   background-size: cover;
   height: 150px;
   }
@@ -113,7 +113,7 @@ body {
 
 #main-footer{
   text-align: center;
-  background-image: url(../images/wood-background.png);
+  background-image: url(../images/wood-background.jpeg);
   background-size: cover;
   height: 150px;
   min-width: 600px;
