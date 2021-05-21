@@ -14,6 +14,7 @@ body {
   background-color: rgb(245, 222, 179);
   margin: 0;
   padding: 0;
+  max-width:100vw;
 }
 
 /*--------Navbar--------*/
