@@ -263,6 +263,9 @@ $("#main-menu-button").click(function () {
 	$("#score-container").css("display", "none");
 	$("#play-container").css("display", "none");
 	$("#menu-return-button").css("display", "none");
+	$("#no-sound-icon").css("display", "inline");
+	$("#sound-icon").css("display", "none");
+	soundToggle = 0;
 });
 
 // The following function controls all of the events of the Play Screen.
@@ -478,7 +481,7 @@ function learn() {
 			$("#learn-cycle-right").css('visibility', 'hidden')
 		} else {
 			$("#learn-cycle-left").css('visibility', 'visible'),
-			$("#learn-cycle-right").css('visibility', 'visible')
+				$("#learn-cycle-right").css('visibility', 'visible')
 
 		}
 
