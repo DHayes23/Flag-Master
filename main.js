@@ -211,6 +211,7 @@ $("#play-button").click(function () {
 	$("#learn-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#play-container").css("display", "block");
+	$("#menu-return-button").css("display", "inline");
 	playGame();
 });
 
@@ -219,6 +220,7 @@ $("#learn-button").click(function () {
 	$("#play-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#learn-container").css("display", "block");
+	$("#menu-return-button").css("display", "inline");
 	learn();
 });
 
@@ -227,6 +229,7 @@ $("#main-brand").click(function () {
 	$("#play-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#learn-container").css("display", "none");
+	$("#menu-return-button").css("display", "none");
 	$("#no-sound-icon").css("display", "inline");
 	$("#sound-icon").css("display", "none");
 	soundToggle = 0;
@@ -237,6 +240,7 @@ $("#menu-return-button").click(function () {
 	$("#play-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#learn-container").css("display", "none");
+	$("#menu-return-button").css("display", "none");
 	$("#no-sound-icon").css("display", "inline");
 	$("#sound-icon").css("display", "none");
 	soundToggle = 0;
@@ -246,6 +250,7 @@ $("#play-again-button").click(function () {
 	$("#menu-container").css("display", "none");
 	$("#learn-container").css("display", "none");
 	$("#score-container").css("display", "none");
+	$("#menu-return-button").css("display", "inline");
 	$("#no-sound-icon").css("display", "inline");
 	$("#sound-icon").css("display", "none");
 	$("#play-container").css("display", "block");
@@ -257,6 +262,7 @@ $("#main-menu-button").click(function () {
 	$("#learn-container").css("display", "none");
 	$("#score-container").css("display", "none");
 	$("#play-container").css("display", "none");
+	$("#menu-return-button").css("display", "none");
 });
 
 // The following function controls all of the events of the Play Screen.
