@@ -397,17 +397,6 @@ margin-right: auto;
     
     #main-footer{
       height: 100px;
-      width: 100vw;
-    }
-    
-    .footer-icon {
-      color: wheat;
-      margin-top: 20px;
-      position:inherit;
-    }
-    
-    .footer-link {
-      text-decoration: none;
     }
     
     #email-icon {
@@ -415,7 +404,6 @@ margin-right: auto;
     }
     #email-icon-small {
       margin-right: 20px;
-      margin-top: 10px;
       display: inline;
     }
     
@@ -425,7 +413,6 @@ margin-right: auto;
 
     #github-icon-small {
       margin-right: 20px;
-      margin-top: 10px;
       display: inline;
     }
   }
