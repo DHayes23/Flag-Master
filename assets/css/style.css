@@ -74,7 +74,7 @@ body {
   margin-top: 400px;
   margin-bottom: 350px;
   border-radius: 10%;
-  border: solid black 2px;
+  border: solid black 4px;
   background-image: url(../images/blue-background.jpg);
   display: block;
 }
@@ -359,24 +359,29 @@ margin-right: auto;
 
   /* Small Devices */
   @media (max-width: 600px) {
+
+    /*--------Navbar--------*/
+
+    #main-brand {
+      font-size: 4.5em;
+    }
   
+    /*--------Main Menu--------*/
+
     #menu-container {
-      background-color: rgb(162, 206, 206);
-      width: 100vw;
-      height: 500px;
-      position: relative;
-      margin-top: 400px;
-      margin-bottom: 350px;
-      
+      width: 95vw;
+      height: 450px;
+      margin-top: 200px;
+      margin-bottom: 100px;      
     }
 
     .menu-button {
-      font-size: 1.2em;
+      font-size: 2em;
       padding:5px 5px;
       text-shadow:1px 1px 0px #ffffff;
-      width: 100%; 
-      margin-bottom: 15px;
-      margin-top: 40px;
+      width: 80%; 
+      margin-bottom: 5px;
+      margin-top: 50px;
     }
     
   }
