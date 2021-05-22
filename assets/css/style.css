@@ -476,26 +476,21 @@ margin-right: auto;
     }
 
     /*--------Score Screen--------*/
+    
     #score-container {
       width: 95vw;
       margin-top: 250px;
       margin-bottom: 200px;
       border-radius: 10%;
-      padding: 25px;
-      height: fit-content;
     }
   
     #score-message{
-      margin-top: 10px;
-      text-align: center;
-      font-family: 'Comfortaa';
       font-weight: 600;
       font-size: 2em;
     }
   
     .score-button{
     border-radius:5px;
-    font-family: 'Comfortaa';
     font-size: 2em;
     width: 150px;
     }
