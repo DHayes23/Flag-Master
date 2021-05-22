@@ -446,7 +446,29 @@ margin-right: auto;
       width: 100%;
       margin: 5px; 
     }
-  
+
+    #learn-container {
+      width: 100vw;
+      margin-top: 200px;
+      margin-bottom: 150px;
+      border-radius: 5%;
+      padding: 0px;
+    }
+    
+    #learn-flag-container {
+      width: 200px;
+      height: 130px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    #learn-country-name{
+      border-radius: 15%;
+      font-size: 2em;
+      padding: 5px;
+      width: fit-content;
+    }
+
   }
 
 
