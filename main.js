@@ -327,13 +327,13 @@ function playGame() {
 		if (score === 0) {
 			$("#score-message").text(`You scored ${score}/30! I hope you did that on purpose... `)
 		} else if (score <= 10) {
-			$("#score-message").text(`You scored ${score}/30! You've got a long way to go!`)
+			$("#score-message").text(`You scored ${score}/30! You've got a long way to go if you want to become a Flag Master!`)
 		} else if (score <= 25) {
-			$("#score-message").text(`You scored ${score}/30! Keep practicing!`)
+			$("#score-message").text(`You scored ${score}/30! Keep practicing to improve your knowledge!`)
 		} else if (score < 30) {
 			$("#score-message").text(`You scored ${score}/30! You're not a Flag Master yet, but you're getting close!`)
 		} else {
-			$("#score-message").text(`You scored ${score}/30! You really are a Flag Master!`)
+			$("#score-message").text(`You scored ${score}/30! Wow! You really are a Flag Master!`)
 		}
 
 		function generateCorrectAnswer() {
