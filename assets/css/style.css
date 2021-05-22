@@ -469,6 +469,10 @@ margin-right: auto;
       width: fit-content;
     }
 
+    #offcanvasRight {
+      width: 100%;
+    }
+
   }
 
 
