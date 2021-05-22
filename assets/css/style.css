@@ -420,6 +420,10 @@ margin-right: auto;
       display: inline;
     }
 
+    #menu-return-button {
+      display: none !important;
+    }
+
       /*--------Play Screen--------*/
 
     #play-container {
@@ -441,7 +445,7 @@ margin-right: auto;
       padding: 5px;
       width: 100%;
       margin: 5px; 
-      }
+    }
   
   }
 
