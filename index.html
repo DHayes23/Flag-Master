@@ -18,12 +18,14 @@
 
 <body>
   <!--Navbar-->
+  <!--The Navbar is visible at all times on the webpage, and contains the brand name which acts as a 'Main Menu' button and also a button named 'Main Menu' when in the play/learn screens. The button is removed on the smallest screens -->
   <nav id="main-navbar" class="navbar fixed-top navbar-light">
     <div class="container-fluid">
       <a id="main-brand" class="navbar-brand" href="#">Flag Master</a>
       <button id="menu-return-button">Main Menu</button>
   </nav>
   <!--Main Menu-->
+  <!--The Main Menu screen is the user's directory to the different functions of the website, containing the buttons to go to the Play screen and the Learn Screen, as well as a the How to Play Off Canvas Button-->
   <section>
     <div id="menu-container" class="container">
       <div class="row menu-row">
@@ -45,6 +47,7 @@
     </div>
   </section>
   <!--Play Screen-->
+  <!--The Play Screen is the main function of the website, containing the flag guessing game. The screen mainly comprises of a randomised flag display and 4 answer buttons. Clicking an answer advances the game, changing the flag displayed and the answer buttons. -->
   <section>
     <div id="play-container" class="container">
       <div class="row">
@@ -75,6 +78,7 @@
     </div>
   </section>
   <!--Learn Screen-->
+  <!--The Learn Screen provides the user with a full library of the flags used to play the game. One flag is displayed at a time with its name displayed underneath. The user can scroll through the library using the arrows each side of the flags.-->
   <section>
     <div id="learn-container" class="container">
       <div class="row">
@@ -93,6 +97,7 @@
     </div>
   </section>
   <!--How to Play Off Canvas-->
+  <!--The How to Play Off Canvas displays the basic instructions on how to use the features of the website.-->
   <div class="offcanvas offcanvas-end" tabindex="-0.5" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
       <h4 id="offcanvasRightLabel">How to Play</h4>
@@ -111,6 +116,7 @@
     </div>
   </div>
   <!--Score Screen-->
+  <!--The Score Screen is displayed after the user finishes a game. The user's total score is displayed, as well as a custom comment based on how successful the user was in the game.-->
   <section>
     <div id="score-container" class="container">
       <div class="row">
@@ -125,12 +131,15 @@
     </div>
   </section>
   <!--Footer-->
+  <!--The Footer displays at the bottom of the page, containing a link to Github and a mailto link which opens the users email client and prefils the 'To' field with my email address.-->
   <footer id="main-footer">
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <a href="mailto:d.hayesacademy23@gmail.com" target="_blank" class="footer-link"><i id="email-icon" class="fas fa-envelope fa-5x footer-icon"></i><i id="email-icon-small" class="fas fa-envelope fa-4x footer-icon"></i> </a>
-          <a href="https://github.com/DHayes23" target="_blank" class="footer-link"><i id="github-icon" class="fab fa-github fa-5x footer-icon"></i><i id="github-icon-small" class="fab fa-github fa-4x footer-icon"></i></a>
+          <a href="mailto:d.hayesacademy23@gmail.com" target="_blank" class="footer-link"><i id="email-icon" class="fas fa-envelope fa-5x footer-icon"></i><i id="email-icon-small"
+              class="fas fa-envelope fa-4x footer-icon"></i> </a>
+          <a href="https://github.com/DHayes23" target="_blank" class="footer-link"><i id="github-icon" class="fab fa-github fa-5x footer-icon"></i><i id="github-icon-small"
+              class="fab fa-github fa-4x footer-icon"></i></a>
         </div>
       </div>
     </div>
