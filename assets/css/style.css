@@ -374,6 +374,11 @@ margin-right: auto;
     #main-brand {
       font-size: 4.5em;
     }
+
+    #main-navbar {
+     
+      height: 110px;
+      }
   
     /*--------Main Menu--------*/
 
