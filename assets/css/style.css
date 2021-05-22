@@ -308,17 +308,17 @@ margin-right: auto;
     padding: 25px;
     height: fit-content;
     display: none;
-  }
+}
 
-  #score-message{
+#score-message{
     margin-top: 10px;
     text-align: center;
     font-family: 'Comfortaa';
     font-weight: 600;
     font-size: 3em;
-  }
+}
 
-  .score-button{
+.score-button{
   box-shadow: 1px 1px 0px 0px #1c1b18;
 	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
 	background-color:#eae0c2;
@@ -339,29 +339,33 @@ margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  }
+}
 
-  .score-button:hover {
+.score-button:hover {
     background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
     background-color:#ccc2a6;
-  }
-  .score-button:active {
+}
+.score-button:active {
     position:relative;
     top:1px;
-  }
+}
 
 /*--------How to Play Off Canvas--------*/
 #offcanvasRight {
   background-color: #333029;
   width: 50%;
   font-family: 'Comfortaa';
-  font-size: 2.5em;
+  font-size: 2.1em;
   color: wheat
+}
+
+#offcanvasRightLabel{
+  font-size: 2.2em;
 }
 
 .off-canvas-li {
   list-style-type: disc;
-  }
+}
 
   /*--------Media Queries--------*/
 
@@ -447,6 +451,8 @@ margin-right: auto;
       margin: 5px; 
     }
 
+    /*--------Learn Screen--------*/
+
     #learn-container {
       width: 100vw;
       margin-top: 350px;
@@ -469,18 +475,17 @@ margin-right: auto;
       width: fit-content;
     }
 
+    /*--------How to Play Off Canvas--------*/
+
     #offcanvasRight {
       width: 100%;
+      font-size: 1.8em;
+    }
+    
+    #offcanvasRightLabel{
+      font-size: 2.2em;
     }
 
   }
 
-
-
-  @media (max-width: 400px) {
-    
-  }
-  @media (max-width: 400px) {
-    
-  }
  
