@@ -370,6 +370,7 @@ margin-right: auto;
   /*--------Media Queries--------*/
 
   /* Small Devices */
+  
   @media (max-width: 600px) {
 
     /*--------Navbar--------*/
@@ -476,7 +477,7 @@ margin-right: auto;
     }
 
     /*--------Score Screen--------*/
-    
+
     #score-container {
       width: 95vw;
       margin-top: 250px;
@@ -494,7 +495,6 @@ margin-right: auto;
     font-size: 2em;
     width: 150px;
     }
-
 
     /*--------How to Play Off Canvas--------*/
 
