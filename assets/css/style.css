@@ -359,6 +359,7 @@ margin-right: auto;
 
 .off-canvas-li {
   list-style-type: disc;
+  margin-top: 30px;
 }
 
   /*--------Media Queries--------*/
