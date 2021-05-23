@@ -1,823 +1,826 @@
+// flagDir reduces file size by reducing the length of the flag filepath.
+const flagDir ="assets/images/flags/"
 /* The countries object contains the names and flags of all of the countries
  displayed within the website.*/
 const countries = [
 	{
 			name: "Afghanistan",
-			flag: "assets/images/flags/afghanistan.jpg"
+			flag: `${flagDir}afghanistan.jpg`
 	},
 	{
 			name: "Albania",
-			flag: "assets/images/flags/albania.jpg"
+			flag: `${flagDir}albania.jpg`
 	},
 	{
 			name: "Algeria",
-			flag: "assets/images/flags/algeria.jpg"
+			flag: `${flagDir}algeria.jpg`
 	},
 	{
 			name: "Andorra",
-			flag: "assets/images/flags/andorra.jpg"
+			flag: `${flagDir}andorra.jpg`
 	},
 	{
 			name: "Angola",
-			flag: "assets/images/flags/angola.jpg"
+			flag: `${flagDir}angola.jpg`
 	},
 	{
 			name: "Antigua and Barbuda",
-			flag: "assets/images/flags/antigua-and-barbuda.jpg"
+			flag: `${flagDir}antigua-and-barbuda.jpg`
 	},
 	{
 			name: "Argentina",
-			flag: "assets/images/flags/argentina.jpg"
+			flag: `${flagDir}argentina.jpg`
 	},
 	{
 			name: "Armenia",
-			flag: "assets/images/flags/armenia.jpg"
+			flag: `${flagDir}armenia.jpg`
 	},
 	{
 			name: "Aruba",
-			flag: "assets/images/flags/aruba.jpg"
+			flag: `${flagDir}aruba.jpg`
 	},
 	{
 			name: "Australia",
-			flag: "assets/images/flags/australia.jpg"
+			flag: `${flagDir}australia.jpg`
 	},
 	{
 			name: "Austria",
-			flag: "assets/images/flags/austria.jpg"
+			flag: `${flagDir}austria.jpg`
 	},
 	{
 			name: "Azerbaijan",
-			flag: "assets/images/flags/azerbaijan.jpg"
+			flag: `${flagDir}azerbaijan.jpg`
 	},
 	{
 			name: "The Bahamas",
-			flag: "assets/images/flags/bahamas.jpg"
+			flag: `${flagDir}bahamas.jpg`
 	},
 	{
 			name: "Bahrain",
-			flag: "assets/images/flags/bahrain.jpg"
+			flag: `${flagDir}bahrain.jpg`
 	},
 	{
 			name: "Bangladesh",
-			flag: "assets/images/flags/bangladesh.jpg"
+			flag: `${flagDir}bangladesh.jpg`
 	},
 	{
 			name: "Barbados",
-			flag: "assets/images/flags/barbados.jpg"
+			flag: `${flagDir}barbados.jpg`
 	},
 	{
 			name: "Belarus",
-			flag: "assets/images/flags/belarus.jpg"
+			flag: `${flagDir}belarus.jpg`
 	},
 	{
 			name: "Belgium",
-			flag: "assets/images/flags/belgium.jpg"
+			flag: `${flagDir}belgium.jpg`
 	},
 	{
 			name: "Belize",
-			flag: "assets/images/flags/belize.jpg"
+			flag: `${flagDir}belize.jpg`
 	},
 	{
 			name: "Benin",
-			flag: "assets/images/flags/benin.jpg"
+			flag: `${flagDir}benin.jpg`
 	},
 	{
 			name: "Bermuda",
-			flag: "assets/images/flags/bermuda.jpg"
+			flag: `${flagDir}bermuda.jpg`
 	},
 	{
 			name: "Bhutan",
-			flag: "assets/images/flags/bhutan.jpg"
+			flag: `${flagDir}bhutan.jpg`
 	},
 	{
 			name: "Bolivia",
-			flag: "assets/images/flags/bolivia.jpg"
+			flag: `${flagDir}bolivia.jpg`
 	},
 	{
 			name: "Bosnia and Herzegovina",
-			flag: "assets/images/flags/bosnia-and-herzegovina.jpg"
+			flag: `${flagDir}bosnia-and-herzegovina.jpg`
 	},
 	{
 			name: "Botswana",
-			flag: "assets/images/flags/botswana.jpg"
+			flag: `${flagDir}botswana.jpg`
 	},
 	{
 			name: "Brazil",
-			flag: "assets/images/flags/brazil.jpg"
+			flag: `${flagDir}brazil.jpg`
 	},
 	{
 			name: "Brunei Darussalam",
-			flag: "assets/images/flags/brunei.jpg"
+			flag: `${flagDir}brunei.jpg`
 	},
 	{
 			name: "Bulgaria",
-			flag: "assets/images/flags/bulgaria.jpg"
+			flag: `${flagDir}bulgaria.jpg`
 	},
 	{
 			name: "Burkina Faso",
-			flag: "assets/images/flags/burkina-faso.jpg"
+			flag: `${flagDir}burkina-faso.jpg`
 	},
 	{
 			name: "Burundi",
-			flag: "assets/images/flags/burundi.jpg"
+			flag: `${flagDir}burundi.jpg`
 	},
 	{
 			name: "Cape Verde",
-			flag: "assets/images/flags/cape-verde.jpg"
+			flag: `${flagDir}cape-verde.jpg`
 	},
 	{
 			name: "Cambodia",
-			flag: "assets/images/flags/cambodia.jpg"
+			flag: `${flagDir}cambodia.jpg`
 	},
 	{
 			name: "Cameroon",
-			flag: "assets/images/flags/cameroon.jpg"
+			flag: `${flagDir}cameroon.jpg`
 	},
 	{
 			name: "Canada",
-			flag: "assets/images/flags/canada.jpg"
+			flag: `${flagDir}canada.jpg`
 	},
 	{
 			name: "The Central African Republic",
-			flag: "assets/images/flags/central-african-republic.jpg"
+			flag: `${flagDir}central-african-republic.jpg`
 	},
 	{
 			name: "Chad",
-			flag: "assets/images/flags/chad.jpg"
+			flag: `${flagDir}chad.jpg`
 	},
 	{
 			name: "Chile",
-			flag: "assets/images/flags/chile.jpg"
+			flag: `${flagDir}chile.jpg`
 	},
 	{
 			name: "China",
-			flag: "assets/images/flags/china.jpg"
+			flag: `${flagDir}china.jpg`
 	},
 	{
 			name: "Colombia",
-			flag: "assets/images/flags/colombia.jpg"
+			flag: `${flagDir}colombia.jpg`
 	},
 	{
 			name: "Comoros",
-			flag: "assets/images/flags/comoros.jpg"
+			flag: `${flagDir}comoros.jpg`
 	},
 	{
 			name: "Democratic Republic of the Congo)",
-			flag: "assets/images/flags/democratic-republic-of-congo.jpg"
+			flag: `${flagDir}democratic-republic-of-congo.jpg`
 	},
 	{
 			name: "The Congo",
-			flag: "assets/images/flags/republic-of-the-congo.jpg"
+			flag: `${flagDir}republic-of-the-congo.jpg`
 	},
 	{
 			name: "Cook Islands",
-			flag: "assets/images/flags/cook-islands.jpg"
+			flag: `${flagDir}cook-islands.jpg`
 	},
 	{
 			name: "Costa Rica",
-			flag: "assets/images/flags/costa-rica.jpg"
+			flag: `${flagDir}costa-rica.jpg`
 	},
 	{
 			name: "Croatia",
-			flag: "assets/images/flags/croatia.jpg"
+			flag: `${flagDir}croatia.jpg`
 	},
 	{
 			name: "Cuba",
-			flag: "assets/images/flags/cuba.jpg"
+			flag: `${flagDir}cuba.jpg`
 	},
 	{
 			name: "Curaçao",
-			flag: "assets/images/flags/curacao.jpg"
+			flag: `${flagDir}curacao.jpg`
 	},
 	{
 			name: "Cyprus",
-			flag: "assets/images/flags/cyprus.jpg"
+			flag: `${flagDir}cyprus.jpg`
 	},
 	{
 			name: "Czech Republic",
-			flag: "assets/images/flags/czech-republic.jpg"
+			flag: `${flagDir}czech-republic.jpg`
 	},
 	{
 			name: "Ivory Coast",
-			flag: "assets/images/flags/ivory-coast.jpg"
+			flag: `${flagDir}ivory-coast.jpg`
 	},
 	{
 			name: "Denmark",
-			flag: "assets/images/flags/denmark.jpg"
+			flag: `${flagDir}denmark.jpg`
 	},
 	{
 			name: "Djibouti",
-			flag: "assets/images/flags/djibouti.jpg"
+			flag: `${flagDir}djibouti.jpg`
 	},
 	{
 			name: "Dominica",
-			flag: "assets/images/flags/dominica.jpg"
+			flag: `${flagDir}dominica.jpg`
 	},
 	{
 			name: "Dominican Republic",
-			flag: "assets/images/flags/dominican-republic.jpg"
+			flag: `${flagDir}dominican-republic.jpg`
 	},
 	{
 			name: "Ecuador",
-			flag: "assets/images/flags/ecuador.jpg"
+			flag: `${flagDir}ecuador.jpg`
 	},
 	{
 			name: "Egypt",
-			flag: "assets/images/flags/egypt.jpg"
+			flag: `${flagDir}egypt.jpg`
 	},
 	{
 			name: "El Salvador",
-			flag: "assets/images/flags/el-salvador.jpg"
+			flag: `${flagDir}el-salvador.jpg`
 	},
 	{
 			name: "Equatorial Guinea",
-			flag: "assets/images/flags/equatorial-guinea.jpg"
+			flag: `${flagDir}equatorial-guinea.jpg`
 	},
 	{
 			name: "Eritrea",
-			flag: "assets/images/flags/eritrea.jpg"
+			flag: `${flagDir}eritrea.jpg`
 	},
 	{
 			name: "Estonia",
-			flag: "assets/images/flags/estonia.jpg"
+			flag: `${flagDir}estonia.jpg`
 	},
 	{
 			name: "Eswatini",
-			flag: "assets/images/flags/swaziland.jpg"
+			flag: `${flagDir}swaziland.jpg`
 	},
 	{
 			name: "Ethiopia",
-			flag: "assets/images/flags/ethiopia.jpg"
+			flag: `${flagDir}ethiopia.jpg`
 	},
 	{
 			name: "Faroe Islands",
-			flag: "assets/images/flags/faroe-islands.jpg"
+			flag: `${flagDir}faroe-islands.jpg`
 	},
 	{
 			name: "Fiji",
-			flag: "assets/images/flags/fiji.jpg"
+			flag: `${flagDir}fiji.jpg`
 	},
 	{
 			name: "Finland",
-			flag: "assets/images/flags/finland.jpg"
+			flag: `${flagDir}finland.jpg`
 	},
 	{
 			name: "France",
-			flag: "assets/images/flags/france.jpg"
+			flag: `${flagDir}france.jpg`
 	},
 	{
 			name: "Gabon",
-			flag: "assets/images/flags/gabon.jpg"
+			flag: `${flagDir}gabon.jpg`
 	},
 	{
 			name: "Gambia",
-			flag: "assets/images/flags/gambia.jpg"
+			flag: `${flagDir}gambia.jpg`
 	},
 	{
 			name: "Georgia",
-			flag: "assets/images/flags/georgia.jpg"
+			flag: `${flagDir}georgia.jpg`
 	},
 	{
 			name: "Germany",
-			flag: "assets/images/flags/germany.jpg"
+			flag: `${flagDir}germany.jpg`
 	},
 	{
 			name: "Ghana",
-			flag: "assets/images/flags/ghana.jpg"
+			flag: `${flagDir}ghana.jpg`
 	},
 	{
 			name: "Greece",
-			flag: "assets/images/flags/greece.jpg"
+			flag: `${flagDir}greece.jpg`
 	},
 	{
 			name: "Greenland",
-			flag: "assets/images/flags/greenland.jpg"
+			flag: `${flagDir}greenland.jpg`
 	},
 	{
 			name: "Grenada",
-			flag: "assets/images/flags/grenada.jpg"
+			flag: `${flagDir}grenada.jpg`
 	},
 	{
 			name: "Guatemala",
-			flag: "assets/images/flags/guatemala.jpg"
+			flag: `${flagDir}guatemala.jpg`
 	},
 	{
 			name: "Guinea",
-			flag: "assets/images/flags/guinea.jpg"
+			flag: `${flagDir}guinea.jpg`
 	},
 	{
 			name: "Guinea-Bissau",
-			flag: "assets/images/flags/guinea-bissau.jpg"
+			flag: `${flagDir}guinea-bissau.jpg`
 	},
 	{
 			name: "Guyana",
-			flag: "assets/images/flags/guyana.jpg"
+			flag: `${flagDir}guyana.jpg`
 	},
 	{
 			name: "Haiti",
-			flag: "assets/images/flags/haiti.jpg"
+			flag: `${flagDir}haiti.jpg`
 	},
 	{
 			name: "Honduras",
-			flag: "assets/images/flags/honduras.jpg"
+			flag: `${flagDir}honduras.jpg`
 	},
 	{
 			name: "Hungary",
-			flag: "assets/images/flags/hungary.jpg"
+			flag: `${flagDir}hungary.jpg`
 	},
 	{
 			name: "Iceland",
-			flag: "assets/images/flags/iceland.jpg"
+			flag: `${flagDir}iceland.jpg`
 	},
 	{
 			name: "India",
-			flag: "assets/images/flags/india.jpg"
+			flag: `${flagDir}india.jpg`
 	},
 	{
 			name: "Indonesia",
-			flag: "assets/images/flags/indonesia.jpg"
+			flag: `${flagDir}indonesia.jpg`
 	},
 	{
 			name: "Iran",
-			flag: "assets/images/flags/iran.jpg"
+			flag: `${flagDir}iran.jpg`
 	},
 	{
 			name: "Iraq",
-			flag: "assets/images/flags/iraq.jpg"
+			flag: `${flagDir}iraq.jpg`
 	},
 	{
 			name: "Ireland",
-			flag: "assets/images/flags/ireland.jpg"
+			flag: `${flagDir}ireland.jpg`
 	},
 	{
 			name: "Israel",
-			flag: "assets/images/flags/israel.jpg"
+			flag: `${flagDir}israel.jpg`
 	},
 	{
 			name: "Italy",
-			flag: "assets/images/flags/italy.jpg"
+			flag: `${flagDir}italy.jpg`
 	},
 	{
 			name: "Jamaica",
-			flag: "assets/images/flags/jamaica.jpg"
+			flag: `${flagDir}jamaica.jpg`
 	},
 	{
 			name: "Japan",
-			flag: "assets/images/flags/japan.jpg"
+			flag: `${flagDir}japan.jpg`
 	},
 	{
 			name: "Jordan",
-			flag: "assets/images/flags/jordan.jpg"
+			flag: `${flagDir}jordan.jpg`
 	},
 	{
 			name: "Kazakhstan",
-			flag: "assets/images/flags/kazakhstan.jpg"
+			flag: `${flagDir}kazakhstan.jpg`
 	},
 	{
 			name: "Kenya",
-			flag: "assets/images/flags/kenya.jpg"
+			flag: `${flagDir}kenya.jpg`
 	},
 	{
 			name: "Kiribati",
-			flag: "assets/images/flags/kiribati.jpg"
+			flag: `${flagDir}kiribati.jpg`
 	},
 	{
 			name: "North Korea",
-			flag: "assets/images/flags/north-korea.jpg"
+			flag: `${flagDir}north-korea.jpg`
 	},
 	{
 			name: "South Korea",
-			flag: "assets/images/flags/south-korea.jpg"
+			flag: `${flagDir}south-korea.jpg`
 	},
 	{
 			name: "Kuwait",
-			flag: "assets/images/flags/kwait.jpg"
+			flag: `${flagDir}kwait.jpg`
 	},
 	{
 			name: "Kyrgyzstan",
-			flag: "assets/images/flags/kyrgyzstan.jpg"
+			flag: `${flagDir}kyrgyzstan.jpg`
 	},
 	{
 			name: "Laos",
-			flag: "assets/images/flags/laos.jpg"
+			flag: `${flagDir}laos.jpg`
 	},
 	{
 			name: "Latvia",
-			flag: "assets/images/flags/latvia.jpg"
+			flag: `${flagDir}latvia.jpg`
 	},
 	{
 			name: "Lebanon",
-			flag: "assets/images/flags/lebanon.jpg"
+			flag: `${flagDir}lebanon.jpg`
 	},
 	{
 			name: "Lesotho",
-			flag: "assets/images/flags/lesotho.jpg"
+			flag: `${flagDir}lesotho.jpg`
 	},
 	{
 			name: "Liberia",
-			flag: "assets/images/flags/liberia.jpg"
+			flag: `${flagDir}liberia.jpg`
 	},
 	{
 			name: "Libya",
-			flag: "assets/images/flags/libya.jpg"
+			flag: `${flagDir}libya.jpg`
 	},
 	{
 			name: "Liechtenstein",
-			flag: "assets/images/flags/liechtenstein.jpg"
+			flag: `${flagDir}liechtenstein.jpg`
 	},
 	{
 			name: "Lithuania",
-			flag: "assets/images/flags/lithuania.jpg"
+			flag: `${flagDir}lithuania.jpg`
 	},
 	{
 			name: "Luxembourg",
-			flag: "assets/images/flags/luxembourg.jpg"
+			flag: `${flagDir}luxembourg.jpg`
 	},
 	{
 			name: "Macao",
-			flag: "assets/images/flags/macao.jpg"
+			flag: `${flagDir}macao.jpg`
 	},
 	{
 			name: "Madagascar",
-			flag: "assets/images/flags/madagascar.jpg"
+			flag: `${flagDir}madagascar.jpg`
 	},
 	{
 			name: "Malawi",
-			flag: "assets/images/flags/malawi.jpg"
+			flag: `${flagDir}malawi.jpg`
 	},
 	{
 			name: "Malaysia",
-			flag: "assets/images/flags/malasya.jpg"
+			flag: `${flagDir}malasya.jpg`
 	},
 	{
 			name: "Maldives",
-			flag: "assets/images/flags/maldives.jpg"
+			flag: `${flagDir}maldives.jpg`
 	},
 	{
 			name: "Mali",
-			flag: "assets/images/flags/mali.jpg"
+			flag: `${flagDir}mali.jpg`
 	},
 	{
 			name: "Malta",
-			flag: "assets/images/flags/malta.jpg"
+			flag: `${flagDir}malta.jpg`
 	},
 	{
 			name: "Marshall Islands",
-			flag: "assets/images/flags/marshall-island.jpg"
+			flag: `${flagDir}marshall-island.jpg`
 	},
 	{
 			name: "Martinique",
-			flag: "assets/images/flags/martinique.jpg"
+			flag: `${flagDir}martinique.jpg`
 	},
 	{
 			name: "Mauritania",
-			flag: "assets/images/flags/mauritania.jpg"
+			flag: `${flagDir}mauritania.jpg`
 	},
 	{
 			name: "Mauritius",
-			flag: "assets/images/flags/mauritius.jpg"
+			flag: `${flagDir}mauritius.jpg`
 	},
 	{
 			name: "Mexico",
-			flag: "assets/images/flags/mexico.jpg"
+			flag: `${flagDir}mexico.jpg`
 	},
 	{
 			name: "Micronesia",
-			flag: "assets/images/flags/micronesia.jpg"
+			flag: `${flagDir}micronesia.jpg`
 	},
 	{
 			name: "Moldova",
-			flag: "assets/images/flags/moldova.jpg"
+			flag: `${flagDir}moldova.jpg`
 	},
 	{
 			name: "Monaco",
-			flag: "assets/images/flags/monaco.jpg"
+			flag: `${flagDir}monaco.jpg`
 	},
 	{
 			name: "Mongolia",
-			flag: "assets/images/flags/mongolia.jpg"
+			flag: `${flagDir}mongolia.jpg`
 	},
 	{
 			name: "Montenegro",
-			flag: "assets/images/flags/montenegro.jpg"
+			flag: `${flagDir}montenegro.jpg`
 	},
 	{
 			name: "Morocco",
-			flag: "assets/images/flags/morocco.jpg"
+			flag: `${flagDir}morocco.jpg`
 	},
 	{
 			name: "Mozambique",
-			flag: "assets/images/flags/mozambique.jpg"
+			flag: `${flagDir}mozambique.jpg`
 	},
 	{
 			name: "Myanmar",
-			flag: "assets/images/flags/myanmar.jpg"
+			flag: `${flagDir}myanmar.jpg`
 	},
 	{
 			name: "Namibia",
-			flag: "assets/images/flags/namibia.jpg"
+			flag: `${flagDir}namibia.jpg`
 	},
 	{
 			name: "Nauru",
-			flag: "assets/images/flags/nauru.jpg"
+			flag: `${flagDir}nauru.jpg`
 	},
 	{
 			name: "Nepal",
-			flag: "assets/images/flags/nepal.jpg"
+			flag: `${flagDir}nepal.jpg`
 	},
 	{
 			name: "The Netherlands",
-			flag: "assets/images/flags/netherlands.jpg"
+			flag: `${flagDir}netherlands.jpg`
 	},
 	{
 			name: "New Zealand",
-			flag: "assets/images/flags/new-zealand.jpg"
+			flag: `${flagDir}new-zealand.jpg`
 	},
 	{
 			name: "Nicaragua",
-			flag: "assets/images/flags/nicaragua.jpg"
+			flag: `${flagDir}nicaragua.jpg`
 	},
 	{
 			name: "Niger",
-			flag: "assets/images/flags/niger.jpg"
+			flag: `${flagDir}niger.jpg`
 	},
 	{
 			name: "Nigeria",
-			flag: "assets/images/flags/nigeria.jpg"
+			flag: `${flagDir}nigeria.jpg`
 	},
 	{
 			name: "Niue",
-			flag: "assets/images/flags/niue.jpg"
+			flag: `${flagDir}niue.jpg`
 	},
 	{
 			name: "Norway",
-			flag: "assets/images/flags/norway.jpg"
+			flag: `${flagDir}norway.jpg`
 	},
 	{
 			name: "Oman",
-			flag: "assets/images/flags/oman.jpg"
+			flag: `${flagDir}oman.jpg`
 	},
 	{
 			name: "Pakistan",
-			flag: "assets/images/flags/pakistan.jpg"
+			flag: `${flagDir}pakistan.jpg`
 	},
 	{
 			name: "Palau",
-			flag: "assets/images/flags/palau.jpg"
+			flag: `${flagDir}palau.jpg`
 	},
 	{
 			name: "Palestine",
-			flag: "assets/images/flags/palestine.jpg"
+			flag: `${flagDir}palestine.jpg`
 	},
 	{
 			name: "Panama",
-			flag: "assets/images/flags/panama.jpg"
+			flag: `${flagDir}panama.jpg`
 	},
 	{
 			name: "Papua New Guinea",
-			flag: "assets/images/flags/papua-new-guinea.jpg"
+			flag: `${flagDir}papua-new-guinea.jpg`
 	},
 	{
 			name: "Paraguay",
-			flag: "assets/images/flags/paraguay.jpg"
+			flag: `${flagDir}paraguay.jpg`
 	},
 	{
 			name: "Peru",
-			flag: "assets/images/flags/peru.jpg"
+			flag: `${flagDir}peru.jpg`
 	},
 	{
 			name: "The Philippines",
-			flag: "assets/images/flags/philippines.jpg"
+			flag: `${flagDir}philippines.jpg`
 	},
 	{
 			name: "Poland",
-			flag: "assets/images/flags/poland.jpg"
+			flag: `${flagDir}poland.jpg`
 	},
 	{
 			name: "Portugal",
-			flag: "assets/images/flags/portugal.jpg"
+			flag: `${flagDir}portugal.jpg`
 	},
 	{
 			name: "North Macedonia",
-			flag: "assets/images/flags/republic-of-macedonia.jpg"
+			flag: `${flagDir}republic-of-macedonia.jpg`
 	},
 	{
 			name: "Qatar",
-			flag: "assets/images/flags/qatar.jpg"
+			flag: `${flagDir}qatar.jpg`
 	},
 	{
 			name: "Romania",
-			flag: "assets/images/flags/romania.jpg"
+			flag: `${flagDir}romania.jpg`
 	},
 	{
 			name: "Russia",
-			flag: "assets/images/flags/russia.jpg"
+			flag: `${flagDir}russia.jpg`
 	},
 	{
 			name: "Rwanda",
-			flag: "assets/images/flags/rwanda.jpg"
+			flag: `${flagDir}rwanda.jpg`
 	},
 	{
 			name: "Saint Kitts and Nevis",
-			flag: "assets/images/flags/saint-kitts-and-nevis.jpg"
+			flag: `${flagDir}saint-kitts-and-nevis.jpg`
 	},
 	{
 			name: "Saint Lucia",
-			flag: "assets/images/flags/st-lucia.jpg"
+			flag: `${flagDir}st-lucia.jpg`
 	},
 	{
 			name: "Saint Vincent and the Grenadines",
-			flag: "assets/images/flags/st-vincent-and-the-grenadines.jpg"
+			flag: `${flagDir}st-vincent-and-the-grenadines.jpg`
 	},
 	{
 			name: "Samoa",
-			flag: "assets/images/flags/samoa.jpg"
+			flag: `${flagDir}samoa.jpg`
 	},
 	{
 			name: "San Marino",
-			flag: "assets/images/flags/san-marino.jpg"
+			flag: `${flagDir}san-marino.jpg`
 	},
 	{
 			name: "Sao Tome and Principe",
-			flag: "assets/images/flags/sao-tome-and-prince.jpg"
+			flag: `${flagDir}sao-tome-and-prince.jpg`
 	},
 	{
 			name: "Saudi Arabia",
-			flag: "assets/images/flags/saudi-arabia.jpg"
+			flag: `${flagDir}saudi-arabia.jpg`
 	},
 	{
 			name: "Senegal",
-			flag: "assets/images/flags/senegal.jpg"
+			flag: `${flagDir}senegal.jpg`
 	},
 	{
 			name: "Serbia",
-			flag: "assets/images/flags/serbia.jpg"
+			flag: `${flagDir}serbia.jpg`
 	},
 	{
 			name: "Seychelles",
-			flag: "assets/images/flags/seychelles.jpg"
+			flag: `${flagDir}seychelles.jpg`
 	},
 	{
 			name: "Sierra Leone",
-			flag: "assets/images/flags/sierra-leone.jpg"
+			flag: `${flagDir}sierra-leone.jpg`
 	},
 	{
 			name: "Singapore",
-			flag: "assets/images/flags/singapore.jpg"
+			flag: `${flagDir}singapore.jpg`
 	},
 	{
 			name: "Slovakia",
-			flag: "assets/images/flags/slovakia.jpg"
+			flag: `${flagDir}slovakia.jpg`
 	},
 	{
 			name: "Slovenia",
-			flag: "assets/images/flags/slovenia.jpg"
+			flag: `${flagDir}slovenia.jpg`
 	},
 	{
 			name: "Solomon Islands",
-			flag: "assets/images/flags/solomon-islands.jpg"
+			flag: `${flagDir}solomon-islands.jpg`
 	},
 	{
 			name: "Somalia",
-			flag: "assets/images/flags/somalia.jpg"
+			flag: `${flagDir}somalia.jpg`
 	},
 	{
 			name: "South Africa",
-			flag: "assets/images/flags/south-africa.jpg"
+			flag: `${flagDir}south-africa.jpg`
 	},
 	{
 			name: "South Sudan",
-			flag: "assets/images/flags/south-sudan.jpg"
+			flag: `${flagDir}south-sudan.jpg`
 	},
 	{
 			name: "Spain",
-			flag: "assets/images/flags/spain.jpg"
+			flag: `${flagDir}spain.jpg`
 	},
 	{
 			name: "Sri Lanka",
-			flag: "assets/images/flags/sri-lanka.jpg"
+			flag: `${flagDir}sri-lanka.jpg`
 	},
 	{
 			name: "Sudan",
-			flag: "assets/images/flags/sudan.jpg"
+			flag: `${flagDir}sudan.jpg`
 	},
 	{
 			name: "Suriname",
-			flag: "assets/images/flags/suriname.jpg"
+			flag: `${flagDir}suriname.jpg`
 	},
 	{
 			name: "Sweden",
-			flag: "assets/images/flags/sweden.jpg"
+			flag: `${flagDir}sweden.jpg`
 	},
 	{
 			name: "Switzerland",
-			flag: "assets/images/flags/switzerland.jpg"
+			flag: `${flagDir}switzerland.jpg`
 	},
 	{
 			name: "Syria",
-			flag: "assets/images/flags/syria.jpg"
+			flag: `${flagDir}syria.jpg`
 	},
 	{
 			name: "Taiwan",
-			flag: "assets/images/flags/taiwan.jpg"
+			flag: `${flagDir}taiwan.jpg`
 	},
 	{
 			name: "Tajikistan",
-			flag: "assets/images/flags/tajikistan.jpg"
+			flag: `${flagDir}tajikistan.jpg`
 	},
 	{
 			name: "Tanzania",
-			flag: "assets/images/flags/tanzania.jpg"
+			flag: `${flagDir}tanzania.jpg`
 	},
 	{
 			name: "Thailand",
-			flag: "assets/images/flags/thailand.jpg"
+			flag: `${flagDir}thailand.jpg`
 	},
 	{
 			name: "Timor-Leste",
-			flag: "assets/images/flags/east-timor.jpg"
+			flag: `${flagDir}east-timor.jpg`
 	},
 	{
 			name: "Togo",
-			flag: "assets/images/flags/togo.jpg"
+			flag: `${flagDir}togo.jpg`
 	},
 	{
 			name: "Tonga",
-			flag: "assets/images/flags/tonga.jpg"
+			flag: `${flagDir}tonga.jpg`
 	},
 	{
 			name: "Trinidad & Tobago",
-			flag: "assets/images/flags/trinidad-and-tobago.jpg"
+			flag: `${flagDir}trinidad-and-tobago.jpg`
 	},
 	{
 			name: "Tunisia",
-			flag: "assets/images/flags/tunisia.jpg"
+			flag: `${flagDir}tunisia.jpg`
 	},
 	{
 			name: "Turkey",
-			flag: "assets/images/flags/turkey.jpg"
+			flag: `${flagDir}turkey.jpg`
 	},
 	{
 			name: "Turkmenistan",
-			flag: "assets/images/flags/turkmenistan.jpg"
+			flag: `${flagDir}turkmenistan.jpg`
 	},
 	{
 			name: "Tuvalu",
-			flag: "assets/images/flags/tuvalu.jpg"
+			flag: `${flagDir}tuvalu.jpg`
 	},
 	{
 			name: "Uganda",
-			flag: "assets/images/flags/uganda.jpg"
+			flag: `${flagDir}uganda.jpg`
 	},
 	{
 			name: "Ukraine",
-			flag: "assets/images/flags/ukraine.jpg"
+			flag: `${flagDir}ukraine.jpg`
 	},
 	{
 			name: "United Arab Emirates",
-			flag: "assets/images/flags/united-arab-emirates.jpg"
+			flag: `${flagDir}united-arab-emirates.jpg`
 	},
 	{
 			name: "United Kingdom",
-			flag: "assets/images/flags/united-kingdom.jpg"
+			flag: `${flagDir}united-kingdom.jpg`
 	},
 	{
 			name: "United States of America",
-			flag: "assets/images/flags/united-states.jpg"
+			flag: `${flagDir}united-states.jpg`
 	},
 	{
 			name: "Uruguay",
-			flag: "assets/images/flags/uruguay.jpg"
+			flag: `${flagDir}uruguay.jpg`
 	},
 	{
 			name: "Uzbekistan",
-			flag: "assets/images/flags/uzbekistn.jpg"
+			flag: `${flagDir}uzbekistn.jpg`
 	},
 	{
 			name: "Vanuatu",
-			flag: "assets/images/flags/vanuatu.jpg"
+			flag: `${flagDir}vanuatu.jpg`
 	},
 	{
 			name: "Venezuela",
-			flag: "assets/images/flags/venezuela.jpg"
+			flag: `${flagDir}venezuela.jpg`
 	},
 	{
 			name: "Vietnam",
-			flag: "assets/images/flags/vietnam.jpg"
+			flag: `${flagDir}vietnam.jpg`
 	},
 	{
 			name: "Yemen",
-			flag: "assets/images/flags/yemen.jpg"
+			flag: `${flagDir}yemen.jpg`
 	},
 	{
 			name: "Zambia",
-			flag: "assets/images/flags/zambia.jpg"
+			flag: `${flagDir}zambia.jpg`
 	},
 	{
 			name: "Zimbabwe",
-			flag: "assets/images/flags/zimbabwe.jpg"
+			flag: `${flagDir}zimbabwe.jpg`
 	},
 ];
+
 /* The following functions change the display to include the appropriate
 elements as they are needed, and launch the main functions.*/
 $("#play-button").click(function() {
