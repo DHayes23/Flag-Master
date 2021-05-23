@@ -320,7 +320,7 @@ function playGame() {
 		// This displays the score menu when the user finishes a round of the game.
 		if (cardCounter > 30) {
 			$("#play-container").css("display", "none"),
-			$("#score-container").css("display", "block");
+				$("#score-container").css("display", "block");
 		}
 
 		// This displays the score the player achieved in the round on the Score Screen, as well as a different message for certain score thresholds
