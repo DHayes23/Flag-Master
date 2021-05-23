@@ -410,6 +410,8 @@ function playGame() {
 			$("#answer-button-2").click(function () {
 				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'red');
+				// The following line of code turns the correct answer green on the user clicking an incorrect answer, thereby allowing the user to learn even while making mistakes. To accommodate this, the user is also given more time to read the correct answer before the game displays the next answer. 
+				$("#answer-button-1").css('color', 'green');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				if (soundToggle === 1) {
@@ -418,14 +420,16 @@ function playGame() {
 				buttonArray = [];
 				setTimeout(function answerClick() {
 					$("#answer-button-2").css('color', 'black');
+					$("#answer-button-1").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
 					nextFlag();
-				}, 800);
+				}, 1000);
 			});
 			//Button 3
 			$("#answer-button-3").click(function () {
 				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'red');
+				$("#answer-button-1").css('color', 'green');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				if (soundToggle === 1) {
@@ -434,14 +438,16 @@ function playGame() {
 				buttonArray = [];
 				setTimeout(function answerClick() {
 					$("#answer-button-3").css('color', 'black');
+					$("#answer-button-1").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
 					nextFlag();
-				}, 800);
+				}, 1000);
 			});
 			// Button 4
 			$("#answer-button-4").click(function () {
 				$('.answer-button').prop('disabled', true);
 				$(this).css('color', 'red');
+				$("#answer-button-1").css('color', 'green');
 				$('#play-flag-container').css('background-color', 'red');
 				$('#play-flag-container').css('background-image', `url(assets/images/cancel.png)`);
 				if (soundToggle === 1) {
@@ -450,9 +456,10 @@ function playGame() {
 				buttonArray = [];
 				setTimeout(function answerClick() {
 					$("#answer-button-4").css('color', 'black');
+					$("#answer-button-1").css('color', 'black');
 					$('.answer-button').removeAttr("disabled");
 					nextFlag();
-				}, 800);
+				}, 1000);
 			});
 		}
 
