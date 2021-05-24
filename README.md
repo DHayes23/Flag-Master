@@ -114,10 +114,18 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
  * Both of the aforementioned icons open their linked content in a separate tab, ensuring that the user's focus is not taken away from the Flag Master website.
 
 ---
- ## Upcoming Features
+## Upcoming Features
 ---
+### Region Based Flags
+---
+* By adding a region to each of the countries in the countries object, region based learning could be implemented. 
+* The countries of Europe, for example, could be used in a separate game mode to focus the user's learning on an area of particular interest to them. 
 
+### Game Length Modification
 ---
+* Implementing a user scalable game length would allow the user to tailor the game to their preferences. 
+* Instead of testing their knowledge based on 30 flags in one round, the user could play for as long as they wished based on the number they input.
+
 ## Design Notes
 ---
 ### **Layout**
@@ -151,44 +159,125 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * This functionality was tested by running the game several times and observing the results. 
 * The flag display performed as expected, thereby passing this test.
 ### **Functionality - Play Screen - Answer Buttons**
-
-### **Functionality - Learn Screen**
+---
+* The answer buttons should display one correct answer and three incorrect answers every time a new flag is displayed.
+* The same country name should not appear more than once at a time in the answer buttons. 
+* When clicked, the answer buttons should indicate a correct or incorrect input. Additionally, if the user inputs an incorrect answer, the correct answer should highlight in green. 
+* This functionality was tested by extensive observation and logging of results. 
+* The answer buttons performed as expected and passed these tests.
+### **Functionality - Play Screen - Card Counter**
+---
+* The card counter should display the number of times a new flag has been displayed to the user. 
+* This functionality was tested by manually advancing the game by clicking answers and observing the card counter. 
+* The card counter performed as expected and passed this test. 
+### **Functionality - Play Screen - Sound Toggle**
+---
+* The sound toggle icons should change in appearance on click, and also enable/disable the game sounds. Additionally, these sounds should be disabled by default every time the user plays the game.
+* The icon changing functionality was tested by clicking the sound toggle icons and observing to ensure that the icons change appropriately. 
+* The icons changed as expected, thereby passing this test. 
+* The sound toggling functionality was tested by clicking the sound toggle icons, then clicking the answer buttons and listening to test if the game sounds worked correctly. 
+* The sounds played as expected, and were muted by default, passing this test. 
+### **Functionality - Score Screen - Message**
+---
+* The score screen should display the user's score and a message based on their performance. 
+* This functionality was tested by playing the game and intentionally meeting the performance breakpoints to ensure the correct messages were displayed. 
+* The user's score and performance message performed as expected, passing this test.
+### **Functionality - Score Screen - Buttons**
+---
+* The score screen should display two buttons: The main menu button and the play again button.
+* The main menu button should return the user to the main menu.
+* The play again button should re-initiate the play screen.
+* Both buttons were manually tested by clicking and observing the results. 
+* Both buttons performed as expected and passed these tests. 
+### **Functionality - Learn Screen - Country Name Display**
+---
+* The country name display should display the names of the countries as dictated by the flag index, one at a time and in alphabetical order.
+* To test this functionality, the flag index was changed to ensure proper operation.
+* The country name display performed as expected and passed this test.
+### **Functionality - Learn Screen - Flag Display**
+---
+* The flag display should display the flag that is associated with the country named in the country name display. 
+* To test this functionality the country name display was changed and the flag display was observed. 
+* The flag display performed as expected, changing when the country name display was changed, thereby passing this test.
+### **Functionality - Learn Screen - Arrow Icons**
+---
+* The arrow icons, displayed either side of the flag display, should change the flag index on click, thereby changing the flag display and the country name display.
+* Additionally, the left arrow icon should not be visible when the first flag is displayed and the right arrow icon should not be visible when the last flag is displayed. 
+* To test this functionality, the icons were clicked and observed.
+* The flags functioned as expected, passing these tests.
+### **Functionality - Learn Screen - Card Counter**
+---
+* The flag counter should display the number of the flag the user is currently viewing, and changes when they cycle through the flag library using the arrow icons.
+* This functionality was tested by cycling through the flags and observing the card counter.
+* The card counter performed as expected and passed this test. 
 ### **Functionality - How to Play Off Canvas**
+* The how to play off canvas is a Bootstrap 5 component, which should appear when its button on the main menu is clicked and displays instructions to the user.
+* This functionality was tested by clicking the how to play button on the main menu and observing the results. 
+* The how to play button opened the off canvas and displayed the correct contents, thereby passing this test.
 ### **Functionality - Footer**
-
-
-
+* The footer has two functional elements: The email icon and the github icon. 
+* The email icon should open the user's default mail client in a separate tab on click, automatically filling the 'To' field of the email.
+* This functionality was tested by clicking on the icon and observing the effects.
+* The email icon performed as expected, passing this test.
+* The github icon should open my github page in a new tab on click. 
+* This functionality was tested by clicking on the icon and observing the effects.
+* The github icon performed as expected, passing this test.
 ### **Browser Compatibility**
-
-
+* The website has been tested on a variety of both desktop and mobile based browsers. 
+* These browsers include: Google Chrome, Firefox, Safari and Microsoft Edge. 
+* The website behaved identically and as expected on all browsers. 
 ### **Responsivity**
-
+* The site is responsive, adapting to the size of the user's screen automatically. 
+* Through the use of Bootstrap 5 and media queries, the site adapts well to different screen sizes. 
+* At the smallest screen sizes a media query reduces the sizes of various containers and elements to fit the bounds of the user's screen.
 
 ---
 ## Deployment
 ---
-### **The following steps were taken to deploy the website:**
+### **The following steps can be taken to deploy the website:**
+1. Log into an existing Github account.
+2. Navigate to the repository containing the website you wish to deploy.
+3. If your repository is private, and you do not have a Github premium account, you will need to make it public to deploy your site on Github Pages. Follow the second section in this guide if you need to make your repository public. 
+4. Within the repository, navigate to the settings menu. 
+5. Navigate to the 'Pages' section within the settings menu. 
+6. In the 'Source' tab's dropdown menu, select the branch you wish to deploy.
+7. Click the 'Save' button and your website will be deployed. 
+8. Navigate back to the 'Code' tab of your repository. 
+9. Within the 'Code' tab, find the 'Environments' heading on the right side of the page.
+10. Under the 'Environments' heading, the link to your live deployment should be visible.
+11. Click this link to be brought to a list of the deployments associated with this repository. 
+12. Click on the 'View Deployment' button to the right side of your latest deployment to view the deployed website.
 
+### **The following steps can be taken to make your repository public:**
+1. Log into an existing Github account.
+2. Navigate to the repository containing the website you wish to make public.
+3. Within the repository, navigate to the settings menu. 
+4. Navigate to the 'Manage Access' section within the settings menu.
+5. Under 'Who has access', you will see the visibility status of your repository. If this says'Public Repository', your site can be deployed and you need not follow this guide any further. Otherwise, move on to step 6. 
+6. Click the 'Manage' button.
+7. The 'Manage' button should have made the 'Danger Zone' menu visible. 
+8. Click the 'Change Visibility' button.
+9. Click the 'Make Public' radio button and type the full title of your repository into the input below, exactly as it appears in the prompt.  
+10. Click the 'I Understand, Change Repository Visibility' button to make your repository publically visible. 
+11. If you wish to deploy your website to Github pages, return to step 4 of the guide above. 
 ---
 ## Technologies Used
 ---
 ### **Bootstrap 5**
-
+* Bootstrap 5 was used for its grid system and to implement some premade components such as the how to play off canvas. 
 ### **Font Awesome 5**
+* Font Awesome 5 was used to provide all of the icons for the website.
 
 ### **FlatIcon**
+* FlatIcon was used to provide all of the flag images used in the flag displays. 
 
 ### **Pixillion Image Converter**
+* Pixillion was used to resize all of the flag images to an appropriate size and to change their format from pngs to jpegs. 
  
 ### **Microsoft Paint**
 * Microsoft Paint was used to develop the wireframes of the website.
 ### **Github Pages**
 * Github Pages was used to deploy the website.
----
-## Bibliography
----
-### **Websites**
-
 ---
 ## Acknowledgments
 ---
