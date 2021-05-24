@@ -59,6 +59,10 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 --- 
 ## **Wireframes**
 --- 
+![](READMEASSETS/wireframes/menu-wireframe.jpg)
+![](READMEASSETS/wireframes/play-wireframe.jpg)
+![](READMEASSETS/wireframes/learn-wireframe.jpg)
+
 
 ---
 ## **Features**
@@ -267,17 +271,17 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * Bootstrap 5 was used for its grid system and to implement some premade components such as the how to play off canvas. 
 ### **Font Awesome 5**
 * Font Awesome 5 was used to provide all of the icons for the website.
-
 ### **FlatIcon**
 * FlatIcon was used to provide all of the flag images used in the flag displays. 
-
 ### **Pixillion Image Converter**
 * Pixillion was used to resize all of the flag images to an appropriate size and to change their format from pngs to jpegs. 
- 
 ### **Microsoft Paint**
 * Microsoft Paint was used to develop the wireframes of the website.
 ### **Github Pages**
 * Github Pages was used to deploy the website.
+### **AmIResponsive**
+* Am I Responsive was used to provide responsivity screenshots of the website in action. 
+* http://ami.responsivedesign.is/
 ---
 ## **Acknowledgments**
 ---
