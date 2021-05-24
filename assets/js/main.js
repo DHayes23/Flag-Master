@@ -1,5 +1,5 @@
 // flagDir reduces file size by reducing the length of the flag filepath.
-const flagDir ="assets/images/flags/"
+const flagDir ="assets/images/flags/";
 /* The countries object contains the names and flags of all of the countries
  displayed within the website.*/
 const countries = [
