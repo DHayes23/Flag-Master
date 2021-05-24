@@ -1,7 +1,7 @@
-# Flag Master - Code Institute Milestone 2 Project
-# Introduction
+# **Flag Master - Code Institute Milestone 2 Project**
+# **Introduction**
 
-## Milestone Project 2 by Denis Hayes
+## **Milestone Project 2** by Denis Hayes
 ---
 * This project has been developed to fulfil the requirements of the Code Institute's Milestone Project 2.
 * The primary goal of this website is to provide a fun and educational flag quiz game to users.
@@ -13,7 +13,7 @@
 Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 
 ---
- ## Table of Contents
+ ## **Table of Contents**
  ---
  1. Introduction
  2. Screenshots
@@ -30,14 +30,12 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 6. Upcoming Features
 7. Design Notes
 8. Testing
-9. Code Snippets
-10. Deployment
-11. Technologies Used
-12. Bibliography
-13. Acknowledgments
+9. Deployment
+10. Technologies Used
+11. Acknowledgments
 
 ---
-## Screenshots
+## **Screenshots**
 ---
 
 ---
@@ -59,11 +57,11 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * On completion of a game, the user is informed of their score, and receives a custom message based on certain breakpoints. This encourages the user to aim to improve their score over repeated attempts. 
 
 --- 
-## Wireframes
+## **Wireframes**
 --- 
 
 ---
-## Features
+## **Features**
 --- 
 
 ### **Favicon**
@@ -114,7 +112,7 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
  * Both of the aforementioned icons open their linked content in a separate tab, ensuring that the user's focus is not taken away from the Flag Master website.
 
 ---
-## Upcoming Features
+## **Upcoming Features**
 ---
 ### Region Based Flags
 ---
@@ -126,7 +124,7 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * Implementing a user scalable game length would allow the user to tailor the game to their preferences. 
 * Instead of testing their knowledge based on 30 flags in one round, the user could play for as long as they wished based on the number they input.
 
-## Design Notes
+## **Design Notes**
 ---
 ### **Layout**
  * The website is a one page construction, with each element being hidden or displayed at different times depending on which features the user is accessing. 
@@ -139,7 +137,7 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * The backgrounds of the menu and other screens are intended to evoke imagery of water and waves. 
 
 ---
-## Testing
+## **Testing**
 ---
 ### **Functionality - Header**
 ---
@@ -232,7 +230,7 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * At the smallest screen sizes a media query reduces the sizes of various containers and elements to fit the bounds of the user's screen.
 
 ---
-## Deployment
+## **Deployment**
 ---
 ### **The following steps can be taken to deploy the website:**
 1. Log into an existing Github account.
@@ -261,8 +259,10 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 10. Click the 'I Understand, Change Repository Visibility' button to make your repository publically visible. 
 11. If you wish to deploy your website to Github pages, return to step 4 of the guide above. 
 ---
-## Technologies Used
+## **Technologies Used**
 ---
+### **JQuery 5**
+* JQuery was used to simplify the coding of main.js.
 ### **Bootstrap 5**
 * Bootstrap 5 was used for its grid system and to implement some premade components such as the how to play off canvas. 
 ### **Font Awesome 5**
@@ -279,7 +279,7 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 ### **Github Pages**
 * Github Pages was used to deploy the website.
 ---
-## Acknowledgments
+## **Acknowledgments**
 ---
 ### **Brian Macharia, Code Institute Mentor**
 I would like to thank my mentor, Brian, for his invaluable advice and assistance with the realisation of this project. 
