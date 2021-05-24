@@ -37,7 +37,12 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 ---
 ## **Screenshots**
 ---
-
+## Main Menu Screen
+![](READMEASSETS/screenshots/menu-screenshot.jpg)
+## Play Screen
+![](READMEASSETS/screenshots/play-screenshot.jpg)
+## Learn Screen
+![](READMEASSETS/screenshots/learn-screenshot.jpg)
 ---
 ## **User Stories**
 ---
@@ -232,6 +237,10 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * The site is responsive, adapting to the size of the user's screen automatically. 
 * Through the use of Bootstrap 5 and media queries, the site adapts well to different screen sizes. 
 * At the smallest screen sizes a media query reduces the sizes of various containers and elements to fit the bounds of the user's screen.
+![](READMEASSETS/responsivity/menu-responsivity.png)
+![](READMEASSETS/responsivity/play-responsivity.png)
+![](READMEASSETS/responsivity/learn-responsivity.png)
+
 
 ---
 ## **Deployment**
