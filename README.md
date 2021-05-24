@@ -233,6 +233,17 @@ Access the live website at: https://dhayes23.github.io/Milestone-Project-2/
 * The website has been tested on a variety of both desktop and mobile based browsers. 
 * These browsers include: Google Chrome, Firefox, Safari and Microsoft Edge. 
 * The website behaved identically and as expected on all browsers. 
+### **Validation** 
+* The website has been put through three online validators to ensure that no errors are present. 
+* The W3C Markup Validation Service was used to validate index.html.
+* No errors were detected. 
+* Three warnings were issued about a lack of headins for some sections. 
+* These warnings were ignored, as headings in these sections would not have been appropriate.
+* The W3C CSS Validation Service was used to validate style.css. 
+* No errors were detected.
+* JSHint was used to validate main.js. 
+* No errors were detected.
+
 ### **Responsivity**
 * The site is responsive, adapting to the size of the user's screen automatically. 
 * Through the use of Bootstrap 5 and media queries, the site adapts well to different screen sizes. 
